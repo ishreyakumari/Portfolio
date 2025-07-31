@@ -1,14 +1,16 @@
 import React from "react";
 import "./AchievementCard.scss";
 
-export default function AchievementCard({cardInfo, isDark}) {
+export default function AchievementCard({ cardInfo, isDark }) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL for ${name} not found`);
       return;
     }
-    var win = window.open(url, "_blank");
-    win.focus();
+    const win = window.open(url, "_blank");
+    if (win) {
+      win.focus();
+    }
   }
 
   return (
@@ -18,7 +20,7 @@ export default function AchievementCard({cardInfo, isDark}) {
           src={cardInfo.image}
           alt={cardInfo.imageAlt || "Card Thumbnail"}
           className="card-image"
-        ></img>
+        />
       </div>
       <div className="certificate-detail-div">
         <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
@@ -29,8 +31,8 @@ export default function AchievementCard({cardInfo, isDark}) {
         </p>
       </div>
       <div className="certificate-card-footer">
-        {cardInfo.footer.map((v, i) => {
-          return (
+        {Array.isArray(cardInfo.footer) &&
+          cardInfo.footer.map((v, i) => (
             <span
               key={i}
               className={
@@ -40,8 +42,7 @@ export default function AchievementCard({cardInfo, isDark}) {
             >
               {v.name}
             </span>
-          );
-        })}
+          ))}
       </div>
     </div>
   );

@@ -23,10 +23,10 @@ const greeting = {
   username: "ishreyakumari",
   title: "Hi all, I'm Shreya",
   subTitle: emoji(
-    "A passionate AI Engineer / Quality Engineer 🚀 having an experience of automating different web and desktop applications."
+    "Master’s student in Computer Science with experience in software testing, automation, and AI integration. Skilled in building test pipelines, working with LLMs, and developing intelligent systems. Passionate about backend development and innovative tech solutions."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1UlKHco5NqTGFJzQzQfdVhuefQM62Imp6/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -36,7 +36,6 @@ const socialMediaLinks = {
   github:   "https://github.com/Shreya18031997",
   linkedin: "https://www.linkedin.com/in/ishreyakumari/",
   gmail:    "ishreyakumari2022@gmail.com",
-  gitlab:   "https://github.com/Shreya18031997",
   display:  true
 };
 
@@ -69,15 +68,15 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "Automation testing",
-      fontAwesomeClassname: "fab fa-html5"
+      fontAwesomeClassname: "fas fa-wrench"
     },
     {
       skillName: "Performance testing",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      fontAwesomeClassname: "fas fa-cogs"
     },
     {
       skillName: "Python",
-      fontAwesomeClassname: "fab fa-sass"
+      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "JavaScript",
@@ -93,7 +92,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "AI/ML",
-      fontAwesomeClassname: "fab fa-swift"
+      fontAwesomeClassname: "fas fa-robot"
     },
     {
       skillName: "npm",
@@ -113,7 +112,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Playwright",
-      fontAwesomeClassname: "fab fa-python"
+      fontAwesomeClassname: "fas fa-theater-masks"
     },
     {
       skillName: "docker",
@@ -130,22 +129,17 @@ const educationInfo = {
   schools: [
     {
       schoolName: "California State University - East Bay",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/east_bay.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2024 - May 2026",
-      desc: "Working as research assistant in the field of AI and Robotics. Currently working on a project that involves real-time systems and robotics.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc: "Working as research assistant in the field of AI and Robotics. Currently working on a project that involves real-time systems and robotics."
     },
     {
       schoolName: "Guru Gobind Singh Indraprastha University",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/guru_gobind.png"),
       subHeader: "Bachelor of Science in Information Technology",
       duration: "August 2015 - May 2019",
-      desc: "Ranked top 5% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      desc: "Ranked top 5% in the program. Took courses about Software Engineering, Web Security, Operating Systems etc."
     }
   ]
 };
@@ -179,25 +173,25 @@ const workExperiences = {
     {
       role: "Research Assistant (OSCAR Scholarship)",
       company: "California State University - East Bay",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "May 2025 – Present",
+      companylogo: require("./assets/images/east_bay.png"),
+      date: "Dec 2025 – Present",
       desc: "As a Research Assistant, I worked on integrating a Nano LLM (Ollama) with an AgileX robot to enable natural language-controlled object manipulation. The project involved building a vision-language pipeline that allowed the robot to understand prompts like “pick the item in front of me like this,” interpret visual context through a camera, and execute actions using motion planning with ROS and MoveIt. I combined LLM-driven intent parsing, object detection (YOLO), and robotic arm control to enable gesture-based interaction and autonomous task execution.",
-      descBullets: [
-        "Designed and implemented a pipeline to enable an AgileX robot to understand natural language prompts (e.g., “pick the item in front of me like this”) using a Nano LLM (Ollama) integrated with visual perception and robotic control.",
-        "Leveraged vision-language models (LLaVA/MiniGPT-4), object detection (YOLO), and ROS MoveIt for real-time gesture imitation, motion planning, and autonomous arm-based object manipulation."
-      ]
+      // descBullets: [
+      //   "Designed and implemented a pipeline to enable an AgileX robot to understand natural language prompts (e.g., “pick the item in front of me like this”) using a Nano LLM (Ollama) integrated with visual perception and robotic control.",
+      //   "Leveraged vision-language models (LLaVA/MiniGPT-4), object detection (YOLO), and ROS MoveIt for real-time gesture imitation, motion planning, and autonomous arm-based object manipulation."
+      // ]
     },
     {
       role: "Software Engineer In Test",
       company: "Chegg",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: require("./assets/images/chegg.png"),
       date: "June 2022 – July 2024",
       desc: "At Chegg, I developed and optimized automation frameworks that reduced test execution time by 30% and increased test coverage by 45%. I implemented AI-driven automation for the QnA system, cutting student response time by 40% and boosting engagement. I also conducted load testing using JMeter and CloudTest to enhance system scalability and reduce failure rates by 20%. Additionally, I improved security compliance by 25% through network debugging and validation of firewall, IPS, IDS, and NAT configurations. I streamlined workflows by automating the Quality Workbench Self-Service Portal, reducing file processing time by 35%."
     },
     {
       role: "Test Engineer",
       company: "Infosys",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("./assets/images/infosys.png"),
       date: "Dec 2019 – May 2022",
       desc: "I automated UI and API testing using Selenium and REST Assured, reducing manual efforts by 50% and cutting regression testing time by 40%. I designed and implemented a Page Object Model (POM)-based automation framework, which improved test maintainability and reduced script maintenance effort by 30%. By optimizing API validation processes through automation and structured test case design, I achieved a 40% reduction in response validation time. I also led client test case reviews and collaborated with cross-functional teams to ensure quality standards, resulting in a 25% improvement in defect resolution efficiency. Additionally, I conducted network security testing to strengthen overall system security."
     }
@@ -208,7 +202,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -219,7 +213,7 @@ const bigProjects = {
   subtitle: "Transfer files from one drive to another directly without downloading",
   projects: [
     {
-      image: require("./assets/images/cloudMoverLogo.webp"),
+      image: require("./assets/images/cloud-mover.webp"),
       projectName: "Cloud Mover",
       projectDesc: "The Drive Project is a comprehensive cloud-based file management and optimization tool designed to enhance the usability of Google Drive. It allows users to log in with multiple Google accounts, visualize and manage their storage, and seamlessly transfer files between source and destination drives. Built using React for the frontend and FastAPI for the backend, the system includes intelligent features like file type segregation, deletion options post-transfer, and destination folder selection. A standout capability is the face recognition-based photo tagging and search, which automatically labels known individuals in images and enables quick retrieval by name. This project blends cloud APIs, AI-based face recognition, and user-friendly UI design to create an efficient and intuitive file management experience tailored especially for users juggling multiple Drive accounts.",
       footerLink: [
@@ -248,23 +242,23 @@ const achievementSection = {
       title: "ICPC’24 PacNW Regionalist (Rank 20)",
       subtitle:
         "Achieved rank 20 in ICPC’24 Pacific Northwest regional contest, showcasing problem-solving skills and competitive programming expertise.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      image: require("./assets/images/icpc.png"),
+      imageAlt: "ICPC Logo"
     },
     {
       title: "Spot Award H2 2023",
       subtitle:
         "Achieved Spot Award for exceptional performance in H2 2023.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      image: require("./assets/images/chegg.png"),
+      imageAlt: "Chegg Spot Award Logo"
     },
 
     {
       title: "2nd Position in Hackathon 2024",
       subtitle:
         "Secured the 2nd position in Chegg India's Hackathon 2023 and has been selected as one of the top 9 finalists of Chegg Global Hackathon 2023",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      image: require("./assets/images/chegg.png"),
+      imageAlt: "Chegg Spot Award Logo"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -301,11 +295,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
   contactInfo,
-  twitterDetails,
   isHireable,
   resumeSection
 };
