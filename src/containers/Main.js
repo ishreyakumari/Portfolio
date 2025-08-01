@@ -11,8 +11,8 @@ import Achievement from "./achievement/Achievement";
 import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
-import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
+import SocialMedia from "../components/socialMedia/SocialMedia";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
@@ -47,6 +47,9 @@ const Main = () => {
           <SplashScreen />
         ) : (
           <>
+            <div className="social-media-top">
+              <SocialMedia />
+            </div>
             <Header />
             <Greeting />
             <Skills />
@@ -56,7 +59,6 @@ const Main = () => {
             <Projects />
             <StartupProject />
             <Achievement />
-            <Profile />
             <Footer />
             <ScrollToTopButton />
           </>

@@ -1,15 +1,20 @@
 @import "../../_globalColor";
 
 .achievement-heading {
-  font-size: 56px;
+  font-size: 38px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.2;
   margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  text-align: left;
 }
 .achievement-subtitle {
   text-transform: uppercase;
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .subTitle {
   color: $subTitle;
@@ -18,17 +23,20 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .achievement-heading {
-    font-size: 40px;
+    font-size: 28px;
   }
 }
 @media (max-width: 768px) {
   .achievement-heading {
-    font-size: 30px;
-    text-align: center;
+    font-size: 24px;
+    text-align: left;
+    flex-direction: row;
+    justify-content: flex-start;
   }
   .achievement-subtitle {
-    font-size: 16px;
+    font-size: 15px;
     line-height: normal;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 20px;
   }
 }
