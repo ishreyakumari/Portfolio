@@ -4,13 +4,13 @@
   width: 90%;
   padding: 10px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .greet-main {
   width: 90%;
   padding: 10px 10px;
   margin: 0px auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .greeting-main {
@@ -27,16 +27,16 @@
 
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .empty-div {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .button-greeting-div {
   display: flex;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .download-link-button {
   text-decoration: none;
@@ -50,7 +50,7 @@
 
 .greeting-text-p {
   font-size: 25px;
-  line-height: 32px;
+  line-height: 28px;
 }
 
 .greeting-image-div > img {
