@@ -188,43 +188,52 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Research Assistant (OSCAR Scholarship)",
-      company: "California State University - East Bay",
-      companylogo: require("./assets/images/east_bay.png"),
-      date: "Dec 2024 – Present",
-      desc: "Leading cutting-edge research in AI-robotics integration by developing a vision-language pipeline that enables natural language control of robotic systems. Built an end-to-end solution combining Nano LLM (Ollama), computer vision (YOLO), and robotic control (ROS/MoveIt) to enable intuitive human-robot interaction through gesture-based commands.",
+      role: "AI/ML Intern",
+      company: "Oatmeal AI",
+      companylogo: require("./assets/images/oatmeal_logo.jpeg"),
+      date: "Aug 2025 – Present",
+      desc: "Contributed to the development of conversational AI agents and intelligent systems for agriculture-related applications, focusing on multi-agent responses and real-time API integration to enhance user experience and system efficiency.",
       descBullets: [
-        "Architected a multimodal AI system integrating LLaVA/MiniGPT-4 for vision-language understanding",
-        "Implemented real-time object detection and motion planning for autonomous robotic arm manipulation",
-        "Reduced setup complexity for robotic tasks by 60% through natural language interface design"
+        "Assisted in designing and implementing conversational AI agents using Microsoft AutoGen, enhancing intelligent, multi-agent responses for agriculture-related queries",
+        "Supported the integration of real-time external APIs, such as Open-Meteo, and contributed to Docker-based containerization and deployment, improving application efficiency",
+        "Collaborated on building and refining a Streamlit-based interactive web interface and assisted in backend logic involving Azure OpenAI and Cosmos DB, enhancing user experience and data management"
       ]
     },
     {
-      role: "Software Engineer In Test",
-      company: "Chegg",
+      role: "Research Assistant (OSCAR Scholarship)",
+      company: "California State University - East Bay",
+      companylogo: require("./assets/images/east_bay.png"),
+      date: "Oct 2024 – Present",
+      desc: "Engineering and deploying advanced AI systems for robotic control, focusing on real-time autonomous navigation and language-to-hardware command translation. Developing robust sensor-data pipelines and feedback mechanisms for production-ready robotic applications.",
+      descBullets: [
+        "Engineered and deployed a Nano LLM on an AgileX robot to enable real-time, autonomous navigation and robotic control, translating high-level language commands into low-level hardware actions with minimal latency",
+        "Developed robust sensor-data pipelines and feedback mechanisms to fine-tune LLM behavior in dynamic environments, enabling adaptive responses and reliable performance in resource-constrained, production-like conditions"
+      ]
+    },
+    {
+      role: "Software Engineer in Test",
+      company: "Chegg Inc.",
       companylogo: require("./assets/images/chegg.png"),
       date: "June 2022 – July 2024",
-      desc: "Spearheaded automation initiatives that transformed testing efficiency and system performance for a platform serving 40M+ students globally. Led AI integration projects and performance optimization initiatives that directly improved user experience and platform reliability.",
+      desc: "Developed and optimized automation frameworks for a platform serving millions of students globally. Led AI integration projects and streamlined testing processes that significantly improved system efficiency and user experience.",
       descBullets: [
-        "Architected automation frameworks reducing test execution time by 30% and increasing coverage by 45%",
-        "Implemented AI-driven automation for QnA system, cutting student response time by 40% and boosting engagement",
-        "Conducted performance testing with JMeter/CloudTest, enhancing scalability and reducing failure rates by 20%",
-        "Streamlined Quality Workbench workflows through automation, reducing file processing time by 35%",
-        "Enhanced security compliance by 25% through network debugging and validation of enterprise infrastructure"
+        "Developed and optimized automation frameworks, reducing test execution time by 30% and increasing test coverage by 45%",
+        "Implemented AI-driven automation for Chegg's QnA system, reducing student response time by 40% and improving engagement",
+        "Streamlined file processing workflows by automating the Quality Workbench Self-Service Portal, decreasing processing time by 35%",
+        "Collaborated closely with product and dev teams to integrate automation into CI/CD pipelines, accelerating release cycles and ensuring consistent quality across deployments"
       ]
     },
     {
       role: "Test Engineer",
-      company: "Infosys",
+      company: "Infosys Ltd",
       companylogo: require("./assets/images/infosys.png"),
       date: "Dec 2019 – May 2022",
       desc: "Established robust testing processes and automation frameworks for enterprise clients, leading quality assurance initiatives that significantly improved software delivery efficiency and reliability across multiple projects.",
       descBullets: [
-        "Built comprehensive automation framework using Selenium & REST Assured, reducing manual efforts by 50%",
-        "Designed Page Object Model (POM) architecture improving test maintainability and reducing maintenance by 30%",
-        "Optimized API validation processes achieving 40% faster response validation times",
-        "Led client test case reviews and cross-functional collaboration improving defect resolution by 25%",
-        "Conducted network security testing strengthening enterprise system security posture"
+        "Automated UI and API testing using Selenium and REST Assured, reducing manual efforts by 50% and cutting regression testing time by 40%",
+        "Designed and implemented a Page Object Model (POM)-based automation framework, improving test maintainability and reducing script maintenance effort by 30%",
+        "Optimized API validation processes, reducing API response validation time by 40% through automation and structured test case design",
+        "Coordinated with cross-functional teams to conduct test case reviews and defect triaging, enhancing release quality and reducing post-production issues by 25%"
       ]
     }
   ]
