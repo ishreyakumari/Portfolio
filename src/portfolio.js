@@ -1,5 +1,13 @@
-/* Change this file tconst greeting = {
+/* Change this file tconst greconst greeting = {
   // username: "ishreyakumari",
+  title: "Hi all, I'm Shreya",
+  subTitle: emoji(
+    "Results-driven Software Engineer with expertise in AI-powered application development, automation, and cloud-native systems. Delivered solutions that improved performance by 40%, reduced deployment time by 30%, and enhanced system reliability in production. Skilled in designing scalable architectures and integrating LLMs and automation to build intelligent, high-performance applications."
+  ),
+  resumeLink:
+    "https://drive.google.com/file/d/1UlKHco5NqTGFJzQzQfdVhuefQM62Imp6/view?usp=drive_link", // Set to empty to hide the button
+  displayGreeting: true // Set false to hide this section, defaults to true
+};  // username: "ishreyakumari",
   title: "Hi all, I'm Shreya",
   subTitle: emoji(
     "Software Engineer specializing in test automation, AI integration, and backend systems. Currently pursuing my Master's in Computer Science at CSU East Bay with 4+ years of industry experience at Chegg and Infosys. Passionate about building scalable solutions and innovative tech products."
@@ -42,7 +50,7 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github:   "https://github.com/Shreya18031997",
+  github:   "https://github.com/ishreyakumari/",
   linkedin: "https://www.linkedin.com/in/ishreyakumari/",
   gmail:    "ishreyakumari2022@gmail.com",
   display:  true
@@ -52,22 +60,22 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "EXPERIENCED SOFTWARE ENGINEER SPECIALIZING IN AUTOMATION, AI INTEGRATION & SCALABLE BACKEND SYSTEMS",
+  subTitle: "RESULTS-DRIVEN SOFTWARE ENGINEER SPECIALIZING IN AI-POWERED APPLICATIONS, AUTOMATION & CLOUD-NATIVE SYSTEMS",
   skills: [
     emoji(
-      "⚡ Build scalable backend systems and REST APIs using Python (FastAPI), Node.js with proven enterprise impact"
+      "⚡ Design and deploy intelligent multi-agent systems using Microsoft AutoGen and LLMs with 30% accuracy improvement"
     ),
     emoji(
-      "⚡ Design automation frameworks that reduce testing time by 30% and increase coverage by 45%"
+      "⚡ Engineer scalable automation frameworks reducing test execution time by 30% and increasing coverage by 45%"
     ),
     emoji(
-      "⚡ Integrate AI/ML solutions including LLMs, computer vision, and robotics for real-world applications"
+      "⚡ Develop AI-powered applications with real-time APIs, microservices, and cloud deployment for enhanced performance"
     ),
     emoji(
-      "⚡ Deploy cloud solutions on AWS, Firebase with CI/CD pipelines and performance optimization"
+      "⚡ Build cloud-native solutions on AWS, Azure, and GCP with CI/CD pipelines and container orchestration"
     ),
     emoji(
-      "⚡ Lead technical projects from concept to production with measurable business impact"
+      "⚡ Integrate computer vision, robotics, and sensor fusion for autonomous systems with 60% improved accuracy"
     )
   ],
 
@@ -84,56 +92,56 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "Node.js",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
       skillName: "React",
       fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fas fa-rocket"
     },
     {
       skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
+      skillName: "Azure",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
+    {
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "Git",
-      fontAwesomeClassname: "fab fa-git-alt"
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fas fa-dharmachakra"
     },
     {
       skillName: "AI/ML",
       fontAwesomeClassname: "fas fa-robot"
     },
     {
-      skillName: "Test Automation",
-      fontAwesomeClassname: "fas fa-vial"
+      skillName: "OpenCV",
+      fontAwesomeClassname: "fas fa-eye"
     },
     {
-      skillName: "API Testing",
-      fontAwesomeClassname: "fas fa-exchange-alt"
-    },
-    {
-      skillName: "sql-database",
+      skillName: "PostgreSQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-leaf"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "Jenkins",
+      fontAwesomeClassname: "fab fa-jenkins"
     },
     {
-      skillName: "Playwright",
-      fontAwesomeClassname: "fas fa-theater-masks"
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Selenium",
+      fontAwesomeClassname: "fas fa-vial"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -149,14 +157,14 @@ const educationInfo = {
       logo: require("./assets/images/east_bay.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2024 - May 2026",
-      desc: "- Working as a research assistant in the field of AI and Robotics."
+      desc: "Relevant Courses: Advanced Algorithms, Cloud Technologies, Machine Learning, AI, System Design, Software Engineering. Working as a research assistant in AI and Robotics with OSCAR Scholarship."
     },
     {
-      schoolName: "Guru Gobind Singh Indraprastha University",
+      schoolName: "Ch. Braham Prakash Government Engineering College",
       logo: require("./assets/images/guru_gobind.png"),
       subHeader: "Bachelor of Technology in Information Technology",
       duration: "August 2015 - May 2019",
-      desc: "Ranked top 5% in the program. Took courses about Software Engineering, Web Security, Operating Systems etc."
+      desc: "Relevant Courses: Data Structures, Algorithms, Operating Systems, Database Management Systems. Ranked top 5% in the program."
     }
   ]
 };
@@ -192,11 +200,11 @@ const workExperiences = {
       company: "Oatmeal AI",
       companylogo: require("./assets/images/oatmeal_logo.jpeg"),
       date: "Aug 2025 – Present",
-      desc: "Contributed to the development of conversational AI agents and intelligent systems for agriculture-related applications, focusing on multi-agent responses and real-time API integration to enhance user experience and system efficiency.",
+      desc: "Led a team of 5 engineers to design and deploy intelligent multi-agent systems using Microsoft AutoGen, achieving 30% accuracy improvement. Integrated real-time APIs and implemented scalable microservices architecture for cloud-ready deployment.",
       descBullets: [
-        "Assisted in designing and implementing conversational AI agents using Microsoft AutoGen, enhancing intelligent, multi-agent responses for agriculture-related queries",
-        "Supported the integration of real-time external APIs, such as Open-Meteo, and contributed to Docker-based containerization and deployment, improving application efficiency",
-        "Collaborated on building and refining a Streamlit-based interactive web interface and assisted in backend logic involving Azure OpenAI and Cosmos DB, enhancing user experience and data management"
+        "Led a team of 5 engineers to design and deploy intelligent multi-agent systems using Microsoft AutoGen, enabling contextual AI-driven responses and improving accuracy by 30%",
+        "Integrated real-time APIs (e.g., Open-Meteo) and implemented Docker-based microservices for scalable, cloud-ready deployment; ensured reliability through automated validation and monitoring",
+        "Developed and optimized a Streamlit-based interactive interface and backend logic with Azure OpenAI and Cosmos DB, improving responsiveness and user–AI interaction"
       ]
     },
     {
@@ -204,10 +212,12 @@ const workExperiences = {
       company: "California State University - East Bay",
       companylogo: require("./assets/images/east_bay.png"),
       date: "Oct 2024 – Present",
-      desc: "Engineering and deploying advanced AI systems for robotic control, focusing on real-time autonomous navigation and language-to-hardware command translation. Developing robust sensor-data pipelines and feedback mechanisms for production-ready robotic applications.",
+      desc: "Created and deployed Nano LLM model on NVIDIA Jetson with computer vision integration for real-time perception and motion control. Implemented Gemini Robotics framework achieving 60% improvement in detection accuracy and responsiveness.",
       descBullets: [
-        "Engineered and deployed a Nano LLM on an AgileX robot to enable real-time, autonomous navigation and robotic control, translating high-level language commands into low-level hardware actions with minimal latency",
-        "Developed robust sensor-data pipelines and feedback mechanisms to fine-tune LLM behavior in dynamic environments, enabling adaptive responses and reliable performance in resource-constrained, production-like conditions"
+        "Created and deployed a Nano LLM model on NVIDIA Jetson, integrating with computer vision modules for real-time perception and low-level motion control",
+        "Developed Python-based pipelines leveraging NVIDIA Jetson hardware acceleration to process image streams and integrate with LLM-driven motion planning for precise robotic navigation",
+        "Implemented Gemini Robotics framework for adaptive control, optimizing algorithms to improve detection accuracy and responsiveness by 60%",
+        "Built an optimized sensor data pipeline enabling real-time decision-making and autonomous actions with minimal latency"
       ]
     },
     {
@@ -215,12 +225,12 @@ const workExperiences = {
       company: "Chegg Inc.",
       companylogo: require("./assets/images/chegg.png"),
       date: "June 2022 – July 2024",
-      desc: "Developed and optimized automation frameworks for a platform serving millions of students globally. Led AI integration projects and streamlined testing processes that significantly improved system efficiency and user experience.",
+      desc: "Engineered scalable automation frameworks reducing test execution time by 30% and increasing coverage by 45%. Implemented AI-powered automation for Q&A system, reducing response latency by 40% and enhancing user engagement.",
       descBullets: [
-        "Developed and optimized automation frameworks, reducing test execution time by 30% and increasing test coverage by 45%",
-        "Implemented AI-driven automation for Chegg's QnA system, reducing student response time by 40% and improving engagement",
-        "Streamlined file processing workflows by automating the Quality Workbench Self-Service Portal, decreasing processing time by 35%",
-        "Collaborated closely with product and dev teams to integrate automation into CI/CD pipelines, accelerating release cycles and ensuring consistent quality across deployments"
+        "Engineered scalable automation frameworks that reduced test execution time by 30% and increased coverage by 45%",
+        "Implemented AI-powered automation for Chegg's Q&A system, reducing average response latency by 40% and enhancing user engagement",
+        "Automated file processing workflows via the Quality Workbench Self-Service Portal, decreasing processing time by 35%",
+        "Collaborated cross-functionally to integrate automation into CI/CD pipelines, accelerating release cycles and maintaining production stability"
       ]
     },
     {
@@ -228,12 +238,12 @@ const workExperiences = {
       company: "Infosys Ltd",
       companylogo: require("./assets/images/infosys.png"),
       date: "Dec 2019 – May 2022",
-      desc: "Established robust testing processes and automation frameworks for enterprise clients, leading quality assurance initiatives that significantly improved software delivery efficiency and reliability across multiple projects.",
+      desc: "Automated UI and API testing using Selenium and REST Assured, reducing manual efforts by 50% and regression time by 40%. Developed POM-based automation framework improving maintainability and reducing maintenance effort by 30%.",
       descBullets: [
-        "Automated UI and API testing using Selenium and REST Assured, reducing manual efforts by 50% and cutting regression testing time by 40%",
-        "Designed and implemented a Page Object Model (POM)-based automation framework, improving test maintainability and reducing script maintenance effort by 30%",
-        "Optimized API validation processes, reducing API response validation time by 40% through automation and structured test case design",
-        "Coordinated with cross-functional teams to conduct test case reviews and defect triaging, enhancing release quality and reducing post-production issues by 25%"
+        "Automated UI and API testing using Selenium and REST Assured, reducing manual efforts by 50% and regression time by 40%",
+        "Developed POM-based automation framework, improving maintainability and reducing maintenance effort by 30%",
+        "Enhanced API validation processes and built structured test workflows, cutting response validation time by 40%",
+        "Partnered with development teams for test reviews and defect triage, reducing post-production issues by 25%"
       ]
     }
   ]
@@ -255,16 +265,16 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/cloud-mover.webp"),
-      projectName: "Cloud Mover - Enterprise File Management Platform",
-      projectDesc: "Full-stack cloud file management platform built with React and FastAPI, enabling seamless multi-account Google Drive integration and intelligent file operations.\n\n🔥 Key Features:\n• Multi-drive authentication and visualization\n• Automated file transfer optimization\n• AI-powered face recognition for photo tagging and search\n• Intelligent file categorization and storage optimization\n\n⚙️ Technical Stack:\n• Frontend: React with responsive design\n• Backend: FastAPI with RESTful APIs\n• Integration: Google Drive API\n• AI/ML: OpenCV-based face recognition\n• Database: PostgreSQL\n\n📊 Business Impact:\n• 70% reduction in file management time\n• 99.9% uptime for enterprise-scale operations\n• Efficient concurrent multi-user file operations",
+      projectName: "CloudMover: Smart Google Drive Manager",
+      projectDesc: "Developed a dual-login Google Drive dashboard enabling intelligent file transfers between accounts with folder selection, face recognition–based photo tagging, and automated cleanup. Designed scalable APIs for secure cloud file management including authentication, image-based search, and deletion workflows.\n\n🔥 Key Features:\n• Dual Google Drive account integration\n• Face recognition-based photo tagging\n• Intelligent file transfers and cleanup\n• Secure cloud file management APIs\n\n⚙️ Technical Stack:\n• Frontend: React, Tailwind CSS\n• Backend: FastAPI, Python\n• Authentication: OAuth 2.0\n• APIs: Google Drive API\n• AI/ML: Face Recognition\n• Containerization: Docker\n\n📊 Business Impact:\n• Streamlined file management workflows\n• Enhanced security with OAuth 2.0\n• Automated photo organization and tagging",
       footerLink: [
         {
-          name: "Live Demo",
-          url: "https://cloudmover.tech/"
+          name: "GitHub",
+          url: "https://github.com/ishreyakumari/CloudMover"
         },
         {
-          name: "GitHub",
-          url: "https://github.com/Shreya18031997/CloudMover"
+          name: "Live Demo",
+          url: "#"
         }
         //  you can add extra buttons here.
       ]
@@ -282,26 +292,39 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "ICPC'24 Pacific Northwest Regional - Rank 20",
+      title: "OSCAR Scholarship 2025 - CSU East Bay",
       subtitle:
-        "Achieved top 20 ranking in ICPC'24 Pacific Northwest regional programming contest among 200+ teams, demonstrating exceptional algorithmic problem-solving and competitive programming skills.",
+        "Awarded OSCAR Scholarship for research excellence in AI-driven robotics. Recognized for outstanding academic performance and innovative research contributions in artificial intelligence and robotics integration.",
+      image: require("./assets/images/east_bay.png"),
+      imageAlt: "OSCAR Scholarship Logo"
+    },
+    {
+      title: "ICPC 2024 PacificNW Regionalist - Rank 20",
+      subtitle:
+        "Achieved top 20 ranking among competitive programming teams in ICPC 2024 Pacific Northwest Regional contest, demonstrating exceptional algorithmic problem-solving and programming skills.",
       image: require("./assets/images/icpc.png"),
       imageAlt: "ICPC Logo"
     },
     {
-      title: "Chegg Spot Award H2 2023",
+      title: "2nd Prize - Chegg India Hackathon 2024",
       subtitle:
-        "Recognized for exceptional performance and outstanding contributions to test automation and AI integration projects, directly impacting platform efficiency and user experience.",
-      image: require("./assets/images/chegg.png"),
-      imageAlt: "Chegg Spot Award Logo"
-    },
-
-    {
-      title: "Global Hackathon Finalist & 2nd Place Winner",
-      subtitle:
-        "Secured 2nd position in Chegg India Hackathon 2023 and advanced as one of top 9 finalists in Chegg Global Hackathon 2023, showcasing innovation in educational technology solutions.",
+        "Won 2nd place in Chegg India Hackathon 2024 for developing an automation solution that improved workflow efficiency. Demonstrated innovation in educational technology and process optimization.",
       image: require("./assets/images/chegg.png"),
       imageAlt: "Chegg Hackathon Logo"
+    },
+    {
+      title: "Star Achiever Award 2023 - Chegg Inc.",
+      subtitle:
+        "Recognized for outstanding contribution to test automation and cross-functional collaboration. Awarded for exceptional performance in delivering high-impact engineering solutions.",
+      image: require("./assets/images/chegg.png"),
+      imageAlt: "Chegg Award Logo"
+    },
+    {
+      title: "Best Innovator Award 2022 - Chegg Inc.",
+      subtitle:
+        "Honored for driving process improvements and delivering high-impact engineering solutions. Recognized for innovation in automation frameworks and system optimization.",
+      image: require("./assets/images/chegg.png"),
+      imageAlt: "Chegg Innovation Award Logo"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -312,7 +335,7 @@ const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1UlKHco5NqTGFJzQzQfdVhuefQM62Imp6/view?usp=drive_link", // Set to empty to hide the button
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
