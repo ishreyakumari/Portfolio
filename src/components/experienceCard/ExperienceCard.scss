@@ -121,6 +121,31 @@
   margin-top: 1.5rem;
 }
 
+.experience-text-details ul {
+  padding-left: 0;
+  margin-top: 1rem;
+  margin-left: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.experience-text-details ul li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  padding-left: 1.2rem;
+  position: relative;
+  text-align: left;
+}
+
+.experience-text-details ul li:before {
+  content: '•';
+  color: #0070f3;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 /* Media Query */
 
 @media (max-width: 1380px) {

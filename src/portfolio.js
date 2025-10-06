@@ -1,24 +1,3 @@
-/* Change this file tconst greconst greeting = {
-  // username: "ishreyakumari",
-  title: "Hi all, I'm Shreya",
-  subTitle: emoji(
-    "Results-driven Software Engineer with expertise in AI-powered application development, automation, and cloud-native systems. Delivered solutions that improved performance by 40%, reduced deployment time by 30%, and enhanced system reliability in production. Skilled in designing scalable architectures and integrating LLMs and automation to build intelligent, high-performance applications."
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1UlKHco5NqTGFJzQzQfdVhuefQM62Imp6/view?usp=drive_link", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
-};  // username: "ishreyakumari",
-  title: "Hi all, I'm Shreya",
-  subTitle: emoji(
-    "Software Engineer specializing in test automation, AI integration, and backend systems. Currently pursuing my Master's in Computer Science at CSU East Bay with 4+ years of industry experience at Chegg and Infosys. Passionate about building scalable solutions and innovative tech products."
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1UlKHco5NqTGFJzQzQfdVhuefQM62Imp6/view?usp=drive_link", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
-}; personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
@@ -40,7 +19,7 @@ const greeting = {
   // username: "ishreyakumari",
   title: "Hi all, I'm Shreya",
   subTitle: emoji(
-    "Master’s student in Computer Science with experience in software testing, automation, and AI integration. Skilled in building test pipelines, working with LLMs, and developing intelligent systems. Passionate about backend development and innovative tech solutions."
+    "Results-driven Software Engineer with expertise in AI-powered application development, automation, and cloud-native systems. Delivered solutions that improved performance by 40%, reduced deployment time by 30%, and enhanced system reliability in production. Skilled in designing scalable architectures and integrating LLMs and automation to build intelligent, high-performance applications."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1UlKHco5NqTGFJzQzQfdVhuefQM62Imp6/view?usp=drive_link", // Set to empty to hide the button
@@ -63,16 +42,16 @@ const skillsSection = {
   subTitle: "RESULTS-DRIVEN SOFTWARE ENGINEER SPECIALIZING IN AI-POWERED APPLICATIONS, AUTOMATION & CLOUD-NATIVE SYSTEMS",
   skills: [
     emoji(
-      "⚡ Design and deploy intelligent multi-agent systems using Microsoft AutoGen and LLMs with 30% accuracy improvement"
+      "⚡ Lead development of intelligent multi-agent systems and AI-powered applications with proven enterprise impact"
     ),
     emoji(
       "⚡ Engineer scalable automation frameworks reducing test execution time by 30% and increasing coverage by 45%"
     ),
     emoji(
-      "⚡ Develop AI-powered applications with real-time APIs, microservices, and cloud deployment for enhanced performance"
+      "⚡ Develop cloud-native microservices with real-time APIs and container orchestration for enhanced performance"
     ),
     emoji(
-      "⚡ Build cloud-native solutions on AWS, Azure, and GCP with CI/CD pipelines and container orchestration"
+      "⚡ Build production-ready solutions on AWS, Azure, and GCP with CI/CD pipelines and DevOps best practices"
     ),
     emoji(
       "⚡ Integrate computer vision, robotics, and sensor fusion for autonomous systems with 60% improved accuracy"
@@ -144,7 +123,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-vial"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
@@ -157,14 +136,22 @@ const educationInfo = {
       logo: require("./assets/images/east_bay.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2024 - May 2026",
-      desc: "Relevant Courses: Advanced Algorithms, Cloud Technologies, Machine Learning, AI, System Design, Software Engineering. Working as a research assistant in AI and Robotics with OSCAR Scholarship."
+      desc: "Relevant Courses: Advanced Algorithms, Cloud Technologies, Machine Learning, AI, System Design, Software Engineering.",
+      descBullets: [
+        "Working as a research assistant in AI and Robotics with OSCAR Scholarship",
+        "Focusing on LLM integration with robotics and computer vision systems"
+      ]
     },
     {
       schoolName: "Ch. Braham Prakash Government Engineering College",
       logo: require("./assets/images/guru_gobind.png"),
       subHeader: "Bachelor of Technology in Information Technology",
       duration: "August 2015 - May 2019",
-      desc: "Relevant Courses: Data Structures, Algorithms, Operating Systems, Database Management Systems. Ranked top 5% in the program."
+      desc: "Relevant Courses: Data Structures, Algorithms, Operating Systems, Database Management Systems.",
+      descBullets: [
+        "Ranked top 5% in the program",
+        "Strong foundation in computer science fundamentals and software engineering principles"
+      ]
     }
   ]
 };
@@ -200,7 +187,6 @@ const workExperiences = {
       company: "Oatmeal AI",
       companylogo: require("./assets/images/oatmeal_logo.jpeg"),
       date: "Aug 2025 – Present",
-      desc: "Led a team of 5 engineers to design and deploy intelligent multi-agent systems using Microsoft AutoGen, achieving 30% accuracy improvement. Integrated real-time APIs and implemented scalable microservices architecture for cloud-ready deployment.",
       descBullets: [
         "Led a team of 5 engineers to design and deploy intelligent multi-agent systems using Microsoft AutoGen, enabling contextual AI-driven responses and improving accuracy by 30%",
         "Integrated real-time APIs (e.g., Open-Meteo) and implemented Docker-based microservices for scalable, cloud-ready deployment; ensured reliability through automated validation and monitoring",
@@ -212,7 +198,6 @@ const workExperiences = {
       company: "California State University - East Bay",
       companylogo: require("./assets/images/east_bay.png"),
       date: "Oct 2024 – Present",
-      desc: "Created and deployed Nano LLM model on NVIDIA Jetson with computer vision integration for real-time perception and motion control. Implemented Gemini Robotics framework achieving 60% improvement in detection accuracy and responsiveness.",
       descBullets: [
         "Created and deployed a Nano LLM model on NVIDIA Jetson, integrating with computer vision modules for real-time perception and low-level motion control",
         "Developed Python-based pipelines leveraging NVIDIA Jetson hardware acceleration to process image streams and integrate with LLM-driven motion planning for precise robotic navigation",
@@ -225,7 +210,6 @@ const workExperiences = {
       company: "Chegg Inc.",
       companylogo: require("./assets/images/chegg.png"),
       date: "June 2022 – July 2024",
-      desc: "Engineered scalable automation frameworks reducing test execution time by 30% and increasing coverage by 45%. Implemented AI-powered automation for Q&A system, reducing response latency by 40% and enhancing user engagement.",
       descBullets: [
         "Engineered scalable automation frameworks that reduced test execution time by 30% and increased coverage by 45%",
         "Implemented AI-powered automation for Chegg's Q&A system, reducing average response latency by 40% and enhancing user engagement",
@@ -238,7 +222,6 @@ const workExperiences = {
       company: "Infosys Ltd",
       companylogo: require("./assets/images/infosys.png"),
       date: "Dec 2019 – May 2022",
-      desc: "Automated UI and API testing using Selenium and REST Assured, reducing manual efforts by 50% and regression time by 40%. Developed POM-based automation framework improving maintainability and reducing maintenance effort by 30%.",
       descBullets: [
         "Automated UI and API testing using Selenium and REST Assured, reducing manual efforts by 50% and regression time by 40%",
         "Developed POM-based automation framework, improving maintainability and reducing maintenance effort by 30%",
@@ -266,7 +249,7 @@ const bigProjects = {
     {
       image: require("./assets/images/cloud-mover.webp"),
       projectName: "CloudMover: Smart Google Drive Manager",
-      projectDesc: "Developed a dual-login Google Drive dashboard enabling intelligent file transfers between accounts with folder selection, face recognition–based photo tagging, and automated cleanup. Designed scalable APIs for secure cloud file management including authentication, image-based search, and deletion workflows.\n\n🔥 Key Features:\n• Dual Google Drive account integration\n• Face recognition-based photo tagging\n• Intelligent file transfers and cleanup\n• Secure cloud file management APIs\n\n⚙️ Technical Stack:\n• Frontend: React, Tailwind CSS\n• Backend: FastAPI, Python\n• Authentication: OAuth 2.0\n• APIs: Google Drive API\n• AI/ML: Face Recognition\n• Containerization: Docker\n\n📊 Business Impact:\n• Streamlined file management workflows\n• Enhanced security with OAuth 2.0\n• Automated photo organization and tagging",
+      projectDesc: "Smart Google Drive dashboard with dual-account integration, face recognition photo tagging, and intelligent file transfers. Features OAuth 2.0 security, automated cleanup workflows, and scalable cloud APIs. Built with React, FastAPI, Python, Docker, and Google Drive API integration.",
       footerLink: [
         {
           name: "GitHub",
@@ -335,7 +318,7 @@ const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
   resumeLink:
-    "https://drive.google.com/file/d/1UlKHco5NqTGFJzQzQfdVhuefQM62Imp6/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1Ei9voXAbIAXgc1Z8ZpGeMaJb66o6Aj2c/view?usp=drive_link", // Set to empty to hide the button
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
