@@ -60,7 +60,7 @@ function Header() {
           {viewResume && (
             <li>
               <a
-                href="https://drive.google.com/uc?export=download&id=1Ei9voXAbIAXgc1Z8ZpGeMaJb66o6Aj2c"
+                href="https://drive.google.com/uc?export=download&id=1hb99EM0rwUhyXbdOxcdD3GLd3OdFEOGe"
                 download
                 className="nav-link"
               >

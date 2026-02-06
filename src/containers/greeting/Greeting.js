@@ -39,7 +39,7 @@ export default function Greeting() {
               <div className="button-greeting-div">
                 {greeting.resumeLink && (
                       <a
-                        href="https://drive.google.com/file/d/1Ei9voXAbIAXgc1Z8ZpGeMaJb66o6Aj2c/view"
+                        href="https://drive.google.com/file/d/1hb99EM0rwUhyXbdOxcdD3GLd3OdFEOGe/view"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="download-link-button"

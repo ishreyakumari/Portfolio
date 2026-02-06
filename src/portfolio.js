@@ -19,10 +19,10 @@ const greeting = {
   // username: "ishreyakumari",
   title: "Hi all, I'm Shreya",
   subTitle: emoji(
-    "Results-driven Software Engineer with expertise in AI-powered application development, automation, and cloud-native systems. Delivered solutions that improved performance by 40%, reduced deployment time by 30%, and enhanced system reliability in production. Skilled in designing scalable architectures and integrating LLMs and automation to build intelligent, high-performance applications."
+    "Results-driven Software Engineer in Test with over 4 years of experience in automation testing, QA frameworks, and CI/CD integration. Proven ability to design scalable test automation architectures using Playwright, Robot, Selenium, and REST Assured. Adept at enhancing product quality, improving release stability, and leading test strategy for AI-driven and cloud-native applications."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1UlKHco5NqTGFJzQzQfdVhuefQM62Imp6/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1hb99EM0rwUhyXbdOxcdD3GLd3OdFEOGe/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -31,7 +31,7 @@ const greeting = {
 const socialMediaLinks = {
   github:   "https://github.com/ishreyakumari/",
   linkedin: "https://www.linkedin.com/in/ishreyakumari/",
-  gmail:    "ishreyakumari2022@gmail.com",
+  gmail:    "ishreyakumari2026@gmail.com",
   display:  true
 };
 
@@ -39,22 +39,22 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "RESULTS-DRIVEN SOFTWARE ENGINEER SPECIALIZING IN AI-POWERED APPLICATIONS, AUTOMATION & CLOUD-NATIVE SYSTEMS",
+  subTitle: "RESULTS-DRIVEN SOFTWARE ENGINEER IN TEST SPECIALIZING IN AUTOMATION, QA FRAMEWORKS & CI/CD INTEGRATION",
   skills: [
     emoji(
-      "⚡ Lead development of intelligent multi-agent systems and AI-powered applications with proven enterprise impact"
+      "⚡ Design scalable test automation architectures using Playwright, Robot Framework, Selenium, and REST Assured"
     ),
     emoji(
-      "⚡ Engineer scalable automation frameworks reducing test execution time by 30% and increasing coverage by 45%"
+      "⚡ Engineer end-to-end automation frameworks reducing execution time by 30% and increasing coverage by 45%"
     ),
     emoji(
-      "⚡ Develop cloud-native microservices with real-time APIs and container orchestration for enhanced performance"
+      "⚡ Implement performance and load testing using JMeter and CloudTest, improving scalability and reliability"
     ),
     emoji(
-      "⚡ Build production-ready solutions on AWS, Azure, and GCP with CI/CD pipelines and DevOps best practices"
+      "⚡ Integrate automation suites into CI/CD pipelines (Jenkins, GitLab, GitHub Actions) for continuous testing"
     ),
     emoji(
-      "⚡ Integrate computer vision, robotics, and sensor fusion for autonomous systems with 60% improved accuracy"
+      "⚡ Lead test strategy for AI-driven and cloud-native applications with comprehensive API validation"
     )
   ],
 
@@ -67,60 +67,60 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "React",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "Playwright",
+      fontAwesomeClassname: "fas fa-theater-masks"
     },
     {
-      skillName: "FastAPI",
-      fontAwesomeClassname: "fas fa-rocket"
+      skillName: "Selenium",
+      fontAwesomeClassname: "fas fa-vial"
     },
     {
-      skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "PyTest",
+      fontAwesomeClassname: "fas fa-flask"
     },
     {
-      skillName: "Azure",
-      fontAwesomeClassname: "fab fa-microsoft"
+      skillName: "REST Assured",
+      fontAwesomeClassname: "fas fa-plug"
     },
     {
-      skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Kubernetes",
-      fontAwesomeClassname: "fas fa-dharmachakra"
-    },
-    {
-      skillName: "AI/ML",
-      fontAwesomeClassname: "fas fa-robot"
-    },
-    {
-      skillName: "OpenCV",
-      fontAwesomeClassname: "fas fa-eye"
-    },
-    {
-      skillName: "PostgreSQL",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "MongoDB",
-      fontAwesomeClassname: "fas fa-leaf"
+      skillName: "Postman",
+      fontAwesomeClassname: "fas fa-paper-plane"
     },
     {
       skillName: "Jenkins",
       fontAwesomeClassname: "fab fa-jenkins"
     },
     {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "PostgreSQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git-alt"
     },
     {
-      skillName: "Selenium",
-      fontAwesomeClassname: "fas fa-vial"
+      skillName: "JIRA",
+      fontAwesomeClassname: "fab fa-jira"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
     }
   ],
   display: true
@@ -136,10 +136,10 @@ const educationInfo = {
       logo: require("./assets/images/east_bay.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2024 - May 2026",
-      desc: "Relevant Courses: Advanced Algorithms, Cloud Technologies, Machine Learning, AI, System Design, Software Engineering.",
+      desc: "Relevant Courses: Advanced Algorithms, Cloud Technologies, Software Testing, Machine Learning, System Design.",
       descBullets: [
-        "Working as a research assistant in AI and Robotics with OSCAR Scholarship",
-        "Focusing on LLM integration with robotics and computer vision systems"
+        "Research Assistant with OSCAR Scholarship focusing on AI-driven testing research",
+        "Specialized in test automation and AI/ML integration"
       ]
     },
     {
@@ -149,7 +149,6 @@ const educationInfo = {
       duration: "August 2015 - May 2019",
       desc: "Relevant Courses: Data Structures, Algorithms, Operating Systems, Database Management Systems.",
       descBullets: [
-        "Ranked top 5% in the program",
         "Strong foundation in computer science fundamentals and software engineering principles"
       ]
     }
@@ -184,49 +183,50 @@ const workExperiences = {
   experience: [
     {
       role: "AI/ML Intern",
-      company: "Oatmeal AI",
-      companylogo: require("./assets/images/oatmeal_logo.jpeg"),
-      date: "Aug 2025 – Present",
+      company: "Quneu",
+      companylogo: require("./assets/images/quneu_logo.png"),
+      date: "Jan 2026 – Present",
       descBullets: [
-        "Led a team of 5 engineers to design and deploy intelligent multi-agent systems using Microsoft AutoGen, enabling contextual AI-driven responses and improving accuracy by 30%",
-        "Integrated real-time APIs (e.g., Open-Meteo) and implemented Docker-based microservices for scalable, cloud-ready deployment; ensured reliability through automated validation and monitoring",
-        "Developed and optimized a Streamlit-based interactive interface and backend logic with Azure OpenAI and Cosmos DB, improving responsiveness and user–AI interaction"
+        "Designed and implemented Playwright-based API automation framework for testing backend microservices, including authentication, file upload, and bulk processing workflows",
+        "Developed automated test cases covering login, registration, single/bulk file uploads (PDF, DOC, DOCX, Excel), and delete operations with comprehensive validation",
+        "Performed manual API testing using cURL and Postman to validate endpoints, debug authentication flows, and verify multipart file upload behaviors",
+        "Built reusable test fixtures and helper functions in PyTest to reduce code duplication by 60% and improve test maintainability"
       ]
     },
     {
-      role: "Research Assistant (OSCAR Scholarship)",
-      company: "California State University - East Bay",
-      companylogo: require("./assets/images/east_bay.png"),
-      date: "Oct 2024 – Present",
+      role: "AI/ML Intern",
+      company: "Oatmeal AI",
+      companylogo: require("./assets/images/oatmeal_logo.jpeg"),
+      date: "Aug 2025 – Dec 2025",
       descBullets: [
-        "Created and deployed a Nano LLM model on NVIDIA Jetson, integrating with computer vision modules for real-time perception and low-level motion control",
-        "Developed Python-based pipelines leveraging NVIDIA Jetson hardware acceleration to process image streams and integrate with LLM-driven motion planning for precise robotic navigation",
-        "Implemented Gemini Robotics framework for adaptive control, optimizing algorithms to improve detection accuracy and responsiveness by 60%",
-        "Built an optimized sensor data pipeline enabling real-time decision-making and autonomous actions with minimal latency"
+        "Designed and implemented Playwright-based automation frameworks for testing AI agent interactions and data workflows, improving regression speed by 45%",
+        "Automated validation pipelines for REST and WebSocket APIs used in conversational AI modules, ensuring consistent data flow across agents",
+        "Reduced function and endpoint errors to ~10% and cut customer-side errors by 40% through advanced automation and real-time validation monitoring",
+        "Integrated testing with CI/CD workflows using GitHub Actions and Docker, enabling continuous test execution on every deployment"
       ]
     },
     {
       role: "Software Engineer in Test",
       company: "Chegg Inc.",
       companylogo: require("./assets/images/chegg.png"),
-      date: "June 2022 – July 2024",
+      date: "Jun 2021 – Jul 2024",
       descBullets: [
-        "Engineered scalable automation frameworks that reduced test execution time by 30% and increased coverage by 45%",
-        "Implemented AI-powered automation for Chegg's Q&A system, reducing average response latency by 40% and enhancing user engagement",
-        "Automated file processing workflows via the Quality Workbench Self-Service Portal, decreasing processing time by 35%",
-        "Collaborated cross-functionally to integrate automation into CI/CD pipelines, accelerating release cycles and maintaining production stability"
+        "Developed end-to-end automation frameworks using Robot and Selenium, reducing execution time by 30% and increasing coverage by 45%",
+        "Implemented performance and load testing using CloudTest and JMeter, improving scalability and reducing peak load failures by 20%",
+        "Automated file processing and workflow validation for the Quality Workbench Self-Service Portal, cutting manual testing time by 35%",
+        "Integrated automation suites into CI/CD pipelines (Jenkins, GitLab) to ensure continuous regression testing and stable release cycles"
       ]
     },
     {
       role: "Test Engineer",
       company: "Infosys Ltd",
       companylogo: require("./assets/images/infosys.png"),
-      date: "Dec 2019 – May 2022",
+      date: "Jan 2020 – May 2021",
       descBullets: [
-        "Automated UI and API testing using Selenium and REST Assured, reducing manual efforts by 50% and regression time by 40%",
-        "Developed POM-based automation framework, improving maintainability and reducing maintenance effort by 30%",
-        "Enhanced API validation processes and built structured test workflows, cutting response validation time by 40%",
-        "Partnered with development teams for test reviews and defect triage, reducing post-production issues by 25%"
+        "Automated UI and API testing using Selenium, TestNG, and REST Assured, improving testing efficiency and reducing manual efforts by 50%",
+        "Developed POM-based automation frameworks, enhancing maintainability and reducing test maintenance effort by 30%",
+        "Automated Xoserve's gas agency desktop application, optimizing workflows for billing and customer requests",
+        "Collaborated with development teams for test reviews and defect triage, lowering post-production defects by 25%"
       ]
     }
   ]
@@ -247,9 +247,20 @@ const bigProjects = {
   subtitle: "",
   projects: [
     {
+      image: require("./assets/images/api-automator.webp"),
+      projectName: "API Document Mapper: AI-Powered API Testing Tool",
+      projectDesc: "An intelligent, AI-powered API testing tool that discovers and tests file-upload endpoints from Postman collections. Uses Google Gemini Vision for OCR and document classification, interprets upload errors with LLM reasoning, auto-retries with correct files, and generates comprehensive JSON reports.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/ishreyakumari/Document-and-API-Classifier"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/cloud-mover.webp"),
-      projectName: "CloudMover: Smart Google Drive Manager",
-      projectDesc: "Smart Google Drive dashboard with dual-account integration, face recognition photo tagging, and intelligent file transfers. Features OAuth 2.0 security, automated cleanup workflows, and scalable cloud APIs. Built with React, FastAPI, Python, Docker, and Google Drive API integration.",
+      projectName: "CloudMover: Google Drive Management Tool",
+      projectDesc: "Developed backend APIs for secure file transfers and folder operations across Google Drive accounts. Performed API validation and functional testing for authentication, file movement, and deletion workflows. Built with React, FastAPI, Python, Docker, and Google Drive API integration.",
       footerLink: [
         {
           name: "GitHub",
@@ -259,7 +270,6 @@ const bigProjects = {
           name: "Live Demo",
           url: "https://cloudmover.tech/"
         }
-        //  you can add extra buttons here.
       ]
     }
   ],
@@ -277,35 +287,21 @@ const achievementSection = {
     {
       title: "OSCAR Scholarship 2025 - CSU East Bay",
       subtitle:
-        "Awarded OSCAR Scholarship for research excellence in AI-driven robotics. Recognized for outstanding academic performance and innovative research contributions in artificial intelligence and robotics integration.",
+        "Awarded OSCAR Scholarship for excellence in AI-driven testing research. Recognized for outstanding contributions to automation testing and AI integration research.",
       image: require("./assets/images/east_bay.png"),
       imageAlt: "OSCAR Scholarship Logo"
     },
     {
-      title: "ICPC 2024 PacificNW Regionalist - Rank 20",
+      title: "Star Achiever Award 2024 - Chegg Inc.",
       subtitle:
-        "Achieved top 20 ranking among competitive programming teams in ICPC 2024 Pacific Northwest Regional contest, demonstrating exceptional algorithmic problem-solving and programming skills.",
-      image: require("./assets/images/icpc.png"),
-      imageAlt: "ICPC Logo"
-    },
-    {
-      title: "2nd Prize - Chegg India Hackathon 2024",
-      subtitle:
-        "Won 2nd place in Chegg India Hackathon 2024 for developing an automation solution that improved workflow efficiency. Demonstrated innovation in educational technology and process optimization.",
-      image: require("./assets/images/chegg.png"),
-      imageAlt: "Chegg Hackathon Logo"
-    },
-    {
-      title: "Star Achiever Award 2023 - Chegg Inc.",
-      subtitle:
-        "Recognized for outstanding contribution to test automation and cross-functional collaboration. Awarded for exceptional performance in delivering high-impact engineering solutions.",
+        "Recognized for outstanding contributions to automation and QA optimization in the Chegg AI Integration Project. Awarded for exceptional performance in delivering high-impact testing solutions.",
       image: require("./assets/images/chegg.png"),
       imageAlt: "Chegg Award Logo"
     },
     {
       title: "Best Innovator Award 2022 - Chegg Inc.",
       subtitle:
-        "Honored for driving process improvements and delivering high-impact engineering solutions. Recognized for innovation in automation frameworks and system optimization.",
+        "Honored for developing scalable automation frameworks. Recognized for innovation in test automation and system optimization.",
       image: require("./assets/images/chegg.png"),
       imageAlt: "Chegg Innovation Award Logo"
     }
@@ -318,7 +314,7 @@ const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
   resumeLink:
-    "https://drive.google.com/file/d/1Ei9voXAbIAXgc1Z8ZpGeMaJb66o6Aj2c/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1hb99EM0rwUhyXbdOxcdD3GLd3OdFEOGe/view?usp=drive_link", // Set to empty to hide the button
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
@@ -327,7 +323,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  email_address: "ishreyakumari2022@gmail.com"
+  email_address: "ishreyakumari2026@gmail.com"
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
