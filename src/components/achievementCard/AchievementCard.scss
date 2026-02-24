@@ -81,7 +81,7 @@
 }
 
 .achievement-text-details {
-  padding: 0.8rem 1.2rem 1.2rem;
+  padding: 1rem 1.2rem 1.2rem;
   margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -131,7 +131,7 @@
 /* Match experience bullet - light grey box, left-aligned text, same height for uniform gaps */
 .achievement-description-box {
   margin-top: 0.25rem;
-  padding: 0.8rem 1rem;
+  padding: 1rem;
   text-align: left;
   font-size: $fontSizeBodySmall;
   color: $textColor;
@@ -141,6 +141,9 @@
   line-height: 1.5;
   min-height: 5.5rem;
   flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .achievement-description-text {

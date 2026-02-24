@@ -34,7 +34,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: emoji("What I do 🛠️"),
-  subTitle: "Building automation frameworks for AI/ML pipelines, distributed microservices & high-scale platforms",
+  subTitle: "",
   skills: [
     emoji(
       "Build automation frameworks from scratch for AI/ML pipelines, distributed microservices, and high-scale web platforms"
@@ -62,7 +62,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "JavaScript/TypeScript",
+      skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
@@ -82,7 +82,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-flask"
     },
     {
-      skillName: "GitHub Actions",
+      skillName: "GitHub",
       fontAwesomeClassname: "fab fa-github"
     },
     {
@@ -94,7 +94,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "Splunk/Datadog",
+      skillName: "New Relic",
       fontAwesomeClassname: "fas fa-chart-line"
     },
     {
@@ -112,6 +112,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Linux",
       fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "AI Agents",
+      fontAwesomeClassname: "fas fa-robot"
     }
   ],
   display: true

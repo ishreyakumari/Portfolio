@@ -23,9 +23,11 @@ export default function Skills() {
             <h1 className="skills-heading">
               {skillsSection.title}{" "}
             </h1>
-            <p className="subTitle skills-text-subtitle">
-              {skillsSection.subTitle}
-            </p>
+            {skillsSection.subTitle && (
+              <p className="subTitle skills-text-subtitle">
+                {skillsSection.subTitle}
+              </p>
+            )}
             <SoftwareSkill />
             <div>
               {skillsSection.skills.map((skills, i) => {

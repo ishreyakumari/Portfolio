@@ -21,7 +21,7 @@ export default function ExperienceCard({cardInfo}) {
     return descBullets
       ? descBullets.map((item, i) => (
           <li key={i} className="subTitle">
-            {item}
+            <span className="experience-bullet-content">{item}</span>
           </li>
         ))
       : null;

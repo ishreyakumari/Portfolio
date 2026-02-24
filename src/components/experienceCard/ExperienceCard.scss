@@ -164,7 +164,7 @@ div.experience-logo-link:hover .experience-roundedimg {
 }
 
 .experience-text-details {
-  padding: 0.8rem 1.2rem 1.2rem;
+  padding: 1rem 1.2rem 1.2rem;
   margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -188,16 +188,18 @@ div.experience-logo-link:hover .experience-roundedimg {
   margin-right: 0;
   text-align: left;
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(4, minmax(4.5rem, 1fr));
   gap: 0.5rem;
   flex: 1;
+  min-height: 0;
 }
 
-.experience-text-details ul li {
-  margin-bottom: 0;
+.experience-text-details ul li,
+.experience-text-details ul li.subTitle {
+  margin: 0;
   line-height: 1.5;
-  padding: 0.8rem 1rem;
+  padding: 1rem;
   text-align: left;
   font-size: $fontSizeBodySmall;
   color: $textColor;
@@ -205,9 +207,13 @@ div.experience-logo-link:hover .experience-roundedimg {
   border-radius: 10px;
   border: 1px solid rgba(148, 163, 184, 0.2);
   min-height: 4.5rem;
-  flex: 1;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+}
+
+.experience-bullet-content {
+  width: 100%;
 }
 
 /* Media Query */
