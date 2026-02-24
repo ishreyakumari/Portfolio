@@ -27,14 +27,11 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
               <div className="button-greeting-div">
                 {greeting.resumeLink && (
-                      <a
-                        href="https://drive.google.com/file/d/1tPCrZcqig7nZX4Pq2fXaMndlUUyQ24yR/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="download-link-button"
-                      >
-                        <Button text="View my resume" />
-                      </a>
+                  <Button 
+                    text="View my resume" 
+                    href="https://drive.google.com/file/d/1tPCrZcqig7nZX4Pq2fXaMndlUUyQ24yR/view?usp=sharing"
+                    newTab={true}
+                  />
                 )}
               </div>
             </div>

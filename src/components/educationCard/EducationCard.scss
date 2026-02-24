@@ -37,7 +37,7 @@
 
 .education-text-school {
   margin: 0;
-  font-size: 22px;
+  font-size: $fontSizeCardTitle;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -67,7 +67,7 @@
 .education-text-subHeader {
   color: $textColor;
   font-weight: 600;
-  font-size: 16px;
+  font-size: $fontSizeCardTitleSmall;
   margin: 0px;
   padding-top: 0.5rem;
   line-height: normal;
@@ -75,7 +75,7 @@
 
 .education-text-duration {
   color: $subTitle;
-  font-size: 14px;
+  font-size: $fontSizeBodySmall;
   margin: 0px;
   padding-top: 0.4rem;
   font-weight: 500;
@@ -86,14 +86,14 @@
 
 .education-text-duration::before {
   content: '📅';
-  font-size: 12px;
+  font-size: $fontSizeSmall;
 }
 
 .education-text-desc {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   color: $cardSubtitle;
-  font-size: 14px;
+  font-size: $fontSizeBodySmall;
 }
 
 .education-text-bullets > ul {

@@ -1,6 +1,13 @@
+@import "../../_globalColor";
+
 .education-heading {
-  font-size: 56px;
-  font-weight: 400;
+  font-size: $fontSizeSectionHeading;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .education-section {
@@ -28,10 +35,10 @@
     padding-top: 0px;
   }
   .education-heading {
-    font-size: 40px;
+    font-size: $fontSizeSectionHeadingTablet;
   }
   .education-text-subtitle {
-    font-size: 18px;
+    font-size: $fontSizeCardTitle;
     text-align: center;
   }
 }
@@ -41,10 +48,10 @@
     padding-top: 0px;
   }
   .education-heading {
-    font-size: 30px;
+    font-size: $fontSizeSectionHeadingMobile;
     text-align: center;
   }
   .education-text-subtitle {
-    font-size: 16px;
+    font-size: $fontSizeCardTitleSmall;
   }
 }

@@ -2,43 +2,34 @@
 
 .contact-div-main {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 40px;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdf4 100%);
-  border-radius: 24px;
-  position: relative;
-  overflow: hidden;
+  padding: 3rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  text-align: center;
 }
 
-.contact-div-main::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(8, 145, 178, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
-}
-
-.contact-div-main > * {
-  flex: 1;
+.contact-header {
+  max-width: 600px;
 }
 
 .contact-title {
-  font-size: 42px;
+  font-size: $fontSizeSectionHeading;
   font-weight: 700;
   background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .contact-detail,
 .contact-detail-email {
-  margin-top: 15px;
-  font-size: 24px;
+  margin-top: 1rem;
+  font-size: $fontSizeCardTitle;
   font-weight: 500;
   color: #0891b2;
   text-decoration: none;
@@ -61,33 +52,34 @@
 }
 
 .contact-subtitle {
-  text-transform: none;
   color: $textColor;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: $fontSizeBody;
+  line-height: 1.7;
+  margin: 0 auto 0.75rem auto;
+  max-width: 480px;
+}
+
+.contact-cta {
+  color: $cardSubtitle;
+  font-size: $fontSizeBodySmall;
+  line-height: 1.7;
+  margin: 0 auto 1.5rem auto;
+  font-weight: 400;
+  max-width: 480px;
 }
 
 .contact-text-div {
   margin-top: 1rem;
-  position: relative;
-  z-index: 1;
 }
 
 .contact-margin-top {
   margin-top: 2rem;
 }
 
-.contact-image-div > img {
-  max-width: 85%;
-  height: auto;
-  margin-left: 1.5rem;
-  filter: drop-shadow(0 15px 30px rgba(8, 145, 178, 0.15));
-}
-
 /* Media Query */
 @media (max-width: 1380px) {
   .contact-title {
-    font-size: 34px;
+    font-size: $fontSizeSectionHeadingTablet;
     text-align: center;
   }
   .contact-div-main {
@@ -102,12 +94,12 @@
     border-radius: 16px;
   }
   .contact-title {
-    font-size: 28px;
+    font-size: $fontSizeSectionHeadingMobile;
     text-align: center;
   }
 
   .contact-subtitle {
-    font-size: 14px;
+    font-size: $fontSizeBodySmall;
     line-height: normal;
     text-align: center;
   }
@@ -119,13 +111,9 @@
 
   .contact-detail,
   .contact-detail-email {
-    font-size: 16px;
+    font-size: $fontSizeCardTitleSmall;
     margin-top: 10px;
     padding: 10px 20px;
-  }
-
-  .contact-image-div {
-    display: none;
   }
 
   .contact-margin-top {

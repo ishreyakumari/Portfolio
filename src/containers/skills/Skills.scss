@@ -30,7 +30,7 @@
 }
 
 .skills-heading {
-  font-size: 42px;
+  font-size: $fontSizeSectionHeading;
   font-weight: 700;
   background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
   -webkit-background-clip: text;
@@ -42,7 +42,7 @@
 
 .subTitle {
   color: $textColor;
-  font-size: 15px;
+  font-size: $fontSizeBody;
   text-transform: none;
   letter-spacing: 0;
   font-weight: 500;
@@ -62,7 +62,7 @@
   white-space: normal;
   min-width: 0;
   flex-shrink: 1;
-  font-size: 1rem;
+  font-size: $fontSizeBody;
   color: $textColor;
   padding-left: 5px;
   border-left: 3px solid transparent;
@@ -78,17 +78,17 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {
-    font-size: 32px;
+    font-size: $fontSizeSectionHeadingTablet;
   }
 }
 
 @media (max-width: 768px) {
   .skills-heading {
-    font-size: 26px;
+    font-size: $fontSizeSectionHeadingMobile;
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 15px;
+    font-size: $fontSizeBody;
     line-height: normal;
   }
   .skills-main-div {
@@ -99,18 +99,18 @@
     margin: 15px;
   }
   .skills-text {
-    font-size: 14px;
+    font-size: $fontSizeBodySmall;
     line-height: 1.6;
     text-align: left;
     overflow-wrap: break-word;
     white-space: normal;
   }
   .skills-text-subtitle {
-    font-size: 12px;
+    font-size: $fontSizeSmall;
     text-align: center;
   }
   .subTitle {
-    font-size: 13px;
+    font-size: $fontSizeCaption;
     padding: 8px 14px;
   }
   .skills-image-div {

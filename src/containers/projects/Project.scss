@@ -1,5 +1,7 @@
+@import "../../_globalColor";
+
 .project-title {
-  font-size: 42px;
+  font-size: $fontSizeSectionHeading;
   font-weight: 400;
   line-height: normal;
 }
@@ -18,12 +20,12 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .project-title {
-    font-size: 32px;
+    font-size: $fontSizeSectionHeadingTablet;
   }
 }
 @media (max-width: 768px) {
   .project-title {
-    font-size: 26px;
+    font-size: $fontSizeSectionHeadingMobile;
     text-align: center;
   }
   .repo-cards-div-main {

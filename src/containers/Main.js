@@ -6,11 +6,11 @@ import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
+import Contact from "./contact/Contact";
 import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
 import SplashScreen from "./splashScreen/SplashScreen";
-import SocialMedia from "../components/socialMedia/SocialMedia";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import "./Main.scss";
@@ -38,10 +38,8 @@ const Main = () => {
           <SplashScreen />
         ) : (
           <>
-            <div className="social-media-top">
-              <SocialMedia />
-            </div>
             <Header />
+            <div className="main-content">
             <Greeting />
             <Skills />
             <Education />
@@ -49,8 +47,10 @@ const Main = () => {
             <Projects />
             <StartupProject />
             <Achievement />
+            <Contact />
             <Footer />
             <ScrollToTopButton />
+            </div>
           </>
         )}
       </StyleProvider>

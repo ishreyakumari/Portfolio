@@ -1,3 +1,5 @@
+@import "../../_globalColor";
+
 .experience-cards-div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -6,7 +8,7 @@
 }
 
 .experience-heading {
-  font-size: 42px;
+  font-size: $fontSizeSectionHeading;
   font-weight: 700;
   background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
   -webkit-background-clip: text;
@@ -31,7 +33,7 @@
 
 @media (max-width: 1380px) {
   .experience-heading {
-    font-size: 32px;
+    font-size: $fontSizeSectionHeadingTablet;
   }
   .experience-cards-div {
     grid-template-columns: repeat(2, 1fr);
@@ -41,7 +43,7 @@
 
 @media (max-width: 768px) {
   .experience-heading {
-    font-size: 26px;
+    font-size: $fontSizeSectionHeadingMobile;
     text-align: center;
   }
   .experience-cards-div {

@@ -1,6 +1,6 @@
 import React from "react";
-import Headroom from "react-headroom";
 import "./Header.scss";
+import SocialMedia from "../socialMedia/SocialMedia";
 import {
   workExperiences,
   skillsSection,
@@ -17,10 +17,13 @@ function Header() {
   const viewResume = resumeSection.display;
 
   return (
-    <Headroom>
+    <div className="header-wrapper">
       <header className="header">
-        <a href="/" className="logo">
-        </a>
+        <div className="header-left">
+          <div className="header-social">
+            <SocialMedia />
+          </div>
+        </div>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"
@@ -29,7 +32,8 @@ function Header() {
         >
           <span className="navicon"></span>
         </label>
-        <ul className="menu">
+        <div className="header-right">
+          <ul className="menu">
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
@@ -61,9 +65,10 @@ function Header() {
               </a>
             </li>
           )}
-        </ul>
+          </ul>
+        </div>
       </header>
-    </Headroom>
+    </div>
   );
 }
 export default Header;

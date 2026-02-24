@@ -1,19 +1,23 @@
 @import "../../_globalColor";
 
+#projects.main {
+  min-height: 85vh;
+}
+
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 220px;
+  width: 280px;
   border-radius: 12px;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-title {
   color: $titleColor;
-  font-size: 20px;
+  font-size: $fontSizeCardTitle;
   line-height: 1.3;
   font-weight: 700;
-  margin: 15px 0 8px 0;
+  margin: 14px 0 8px 0;
   background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -22,7 +26,7 @@
 
 .card-subtitle {
   color: $cardSubtitle;
-  font-size: 15px;
+  font-size: $fontSizeBodySmall;
   line-height: 1.6;
 }
 
@@ -31,6 +35,7 @@
   flex-direction: column;
   background-color: #ffffff;
   padding: 1.5rem;
+  min-height: 420px;
   border-radius: 20px;
   border: 1px solid rgba(148, 163, 184, 0.15);
   justify-content: center;
@@ -86,14 +91,14 @@
 
 .project-image {
   position: relative;
-  height: 200px;
+  height: 260px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-  border-radius: 16px;
-  margin-bottom: 10px;
+  border-radius: 12px;
+  margin-bottom: 12px;
 }
 
 .projects-container {
@@ -129,7 +134,7 @@
 
 @media (max-width: 768px) {
   .project-subtitle {
-    font-size: 14px;
+    font-size: $fontSizeBodySmall;
     text-align: center;
   }
   .project-card {

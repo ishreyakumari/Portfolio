@@ -27,7 +27,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  pointer-events: none;
 }
 
 .experience-banner::before {
@@ -56,6 +57,7 @@
   align-items: center;
   justify-content: center;
   z-index: 2;
+  pointer-events: none;
 }
 
 .experience-text-company {
@@ -63,7 +65,7 @@
   padding: 0.8rem;
   margin: 0;
   color: #ffffff;
-  font-size: 18px;
+  font-size: $fontSizeCardTitle;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -72,26 +74,46 @@
   letter-spacing: 0.5px;
 }
 
-.experience-roundedimg {
-  position: relative;
-  object-fit: contain;
-  margin: -2rem auto 0 auto;
+a.experience-logo-link,
+div.experience-logo-link {
   display: block;
+  margin: -2rem auto 0 auto;
+  position: relative;
+  z-index: 100;
   width: 4.5rem;
   height: 4.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.experience-logo-link:hover,
+div.experience-logo-link:hover {
+  transform: scale(1.1);
+}
+
+.experience-roundedimg {
+  object-fit: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
   box-shadow: 0 8px 25px rgba(15, 23, 42, 0.15);
   border-radius: 14px;
   border: 3px solid #ffffff;
   background: #ffffff;
   padding: 6px;
-  z-index: 3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.experience-logo-link:hover .experience-roundedimg,
+div.experience-logo-link:hover .experience-roundedimg {
+  box-shadow: 0 12px 30px rgba(8, 145, 178, 0.25);
 }
 
 .experience-text-role {
   text-align: center;
   color: $titleColor;
   font-weight: 700;
-  font-size: 16px;
+  font-size: $fontSizeCardTitleSmall;
   margin: 0px;
   padding: 0.8rem 1rem 0;
   line-height: 1.4;
@@ -108,7 +130,7 @@
 .experience-text-date {
   text-align: center;
   color: $subTitle;
-  font-size: 13px;
+  font-size: $fontSizeCaption;
   margin: 0px;
   padding-top: 0.3rem;
   font-weight: 500;
@@ -135,38 +157,29 @@
 .experience-text-details ul li {
   margin-bottom: 0.5rem;
   line-height: 1.5;
-  padding-left: 1.2rem;
-  position: relative;
-  text-align: left;
-  font-size: 0.8rem;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  font-size: $fontSizeBodySmall;
   color: $textColor;
-}
-
-.experience-text-details ul li:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 7px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #0891b2, #6366f1);
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 /* Media Query */
 @media (max-width: 1380px) {
   .experience-text-role {
     padding-top: 0.6rem;
-    font-size: 15px;
+    font-size: $fontSizeBody;
     min-height: 2.5rem;
   }
   .experience-text-company {
-    font-size: 16px;
+    font-size: $fontSizeCardTitleSmall;
   }
   .experience-text-date {
-    font-size: 12px;
+    font-size: $fontSizeSmall;
   }
-  .experience-roundedimg {
+  .experience-logo-link {
     width: 4rem;
     height: 4rem;
   }
@@ -181,22 +194,22 @@
     height: 4rem;
   }
   .experience-text-role {
-    font-size: 14px;
+    font-size: $fontSizeBodySmall;
     min-height: 2.2rem;
   }
   .experience-text-company {
-    font-size: 15px;
+    font-size: $fontSizeBody;
   }
   .experience-text-date {
-    font-size: 11px;
+    font-size: $fontSizeSmall;
   }
   .experience-text-desc {
-    font-size: 13px;
+    font-size: $fontSizeCaption;
   }
   .experience-text-details ul li {
-    font-size: 0.75rem;
+    font-size: $fontSizeCaption;
   }
-  .experience-roundedimg {
+  .experience-logo-link {
     width: 3.5rem;
     height: 3.5rem;
     margin-top: -1.5rem;

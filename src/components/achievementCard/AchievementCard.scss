@@ -12,7 +12,7 @@
 
 .card-title {
   color: $titleColor;
-  font-size: 1.1rem;
+  font-size: $fontSizeCardTitle;
   line-height: 1.4;
   font-weight: 700;
   margin: 12px 0 8px 0;
@@ -20,7 +20,7 @@
 
 .card-subtitle {
   color: $cardSubtitle;
-  font-size: 0.9rem;
+  font-size: $fontSizeBodySmall;
   line-height: 1.5;
 }
 
@@ -28,20 +28,25 @@
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
   padding: 1.5rem;
+  padding-top: 2rem;
   border-radius: 20px;
   border: 1px solid rgba(148, 163, 184, 0.15);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  margin-top: 15px;
 }
 
 .certificate-card::before {
   content: '🏆';
   position: absolute;
-  top: 15px;
+  top: -10px;
   right: 15px;
-  font-size: 24px;
-  opacity: 0.3;
+  font-size: 28px;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(10px);
 }
 
 .certificate-detail-div {
@@ -56,7 +61,7 @@
 
 .certificate-card:hover::before {
   opacity: 1;
-  transform: scale(1.2);
+  transform: translateY(-5px) scale(1.1);
 }
 
 .certificate-image-div {
@@ -92,7 +97,7 @@
   align-items: center;
   border-radius: 8px;
   display: inline-flex;
-  font-size: 0.75rem;
+  font-size: $fontSizeCaption;
   font-weight: 500;
   height: 2.2em;
   justify-content: center;

@@ -134,7 +134,7 @@ const educationInfo = {
     {
       schoolName: "Ch. Braham Prakash Government Engineering College",
       logo: require("./assets/images/guru_gobind.png"),
-      subHeader: "Bachelor of Technology in Information Technology",
+      subHeader: "Bachelor of Technology in Information Technology (GPA: 3.50)",
       duration: "August 2015 - May 2019",
       desc: "",
       descBullets: []
@@ -151,6 +151,7 @@ const workExperiences = {
       role: "Software Development Engineer in Test – AI Systems",
       company: "Quneu",
       companylogo: require("./assets/images/quneu_logo.png"),
+      companyUrl: "https://www.quneu.com/",
       date: "Jan 2026 – Present",
       descBullets: [
         "Architected Playwright + PyTest API automation framework from zero in a greenfield startup, establishing backend regression standards across 10+ authentication and file-processing microservices",
@@ -163,6 +164,7 @@ const workExperiences = {
       role: "Automation Engineer",
       company: "Oatmeal AI",
       companylogo: require("./assets/images/oatmeal_logo.jpeg"),
+      companyUrl: "https://oatmealfarmnetwork.com/",
       date: "Aug 2025 – Dec 2025",
       descBullets: [
         "Built Playwright-based regression framework from scratch as sole QA engineer, defining test architecture for AI agent workflows and conversational APIs",
@@ -175,6 +177,7 @@ const workExperiences = {
       role: "Software Development Engineer in Test",
       company: "Chegg Inc.",
       companylogo: require("./assets/images/chegg.png"),
+      companyUrl: "https://www.chegg.com/",
       date: "Jun 2022 – Jul 2024",
       descBullets: [
         "Scaled automated test coverage by 45% and cut regression execution time by 30% via CI parallelization across 20+ modules of a platform serving 4M+ users globally",
@@ -186,6 +189,7 @@ const workExperiences = {
       role: "Test Engineer (Automation)",
       company: "Infosys Ltd",
       companylogo: require("./assets/images/infosys.png"),
+      companyUrl: "https://www.infosys.com/",
       date: "Jan 2020 – May 2022",
       descBullets: [
         "Reduced manual regression effort by 50% and framework maintenance overhead by 30% through Java-based Page Object Model design across a 3-tier enterprise application",
@@ -248,11 +252,18 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "OSCAR Scholarship 2025 - CSU East Bay",
+      title: "OSCAR Scholarship [2025-2026] - CSU East Bay",
       subtitle:
         "Awarded OSCAR Scholarship for excellence in AI-driven testing research. Recognized for outstanding contributions to automation testing and AI integration research.",
       image: require("./assets/images/east_bay.png"),
       imageAlt: "OSCAR Scholarship Logo"
+    },
+    {
+      title: "Vice President - Society of Women Engineers [2024-2025] - CSU East Bay",
+      subtitle:
+        "Led chapter initiatives to promote women in STEM, organized technical workshops and networking events. Mentored 50+ students and increased chapter membership by 40% through outreach programs.",
+      image: require("./assets/images/east_bay.png"),
+      imageAlt: "SWE Logo"
     },
     {
       title: "Star Achiever Award 2024 - Chegg Inc.",
@@ -283,9 +294,11 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: "Contact Me",
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
+  ctaMessage:
+    "Interested in my work or have an opportunity to discuss? I'd love to hear from you - reach out via email or LinkedIn.",
   email_address: "ishreyakumari2026@gmail.com"
 };
 
