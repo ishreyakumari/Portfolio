@@ -73,12 +73,19 @@
   line-height: normal;
 }
 
-.education-text-duration {
+.education-text-datetime-location {
   color: $subTitle;
   font-size: $fontSizeBodySmall;
   margin: 0px;
   padding-top: 0.4rem;
   font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+}
+
+.education-text-duration {
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -86,6 +93,17 @@
 
 .education-text-duration::before {
   content: '📅';
+  font-size: $fontSizeSmall;
+}
+
+.education-text-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.education-text-location-icon {
+  color: #dc2626;
   font-size: $fontSizeSmall;
 }
 
@@ -117,7 +135,7 @@
   .education-text-school {
     font-size: 18px;
   }
-  .education-text-duration {
+  .education-text-datetime-location {
     font-size: 13px;
   }
   .education-roundedimg {

@@ -1,85 +1,145 @@
 @import "../../_globalColor";
 
-.card-image {
-  max-width: 100%;
-  height: auto;
-  width: 100px;
-  border-radius: 16px;
-  background: #ffffff;
-  padding: 10px;
-  box-shadow: 0 4px 15px rgba(8, 145, 178, 0.1);
-}
-
-.card-title {
-  color: $titleColor;
-  font-size: $fontSizeCardTitle;
-  line-height: 1.4;
-  font-weight: 700;
-  margin: 12px 0 8px 0;
-}
-
-.card-subtitle {
-  color: $cardSubtitle;
-  font-size: $fontSizeBodySmall;
-  line-height: 1.5;
-}
-
-.certificate-card {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
-  padding: 1.5rem;
-  padding-top: 2rem;
+/* Match experience card structure and styling */
+.achievement-card-style {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $lightBackground2;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
   border-radius: 20px;
   border: 1px solid rgba(148, 163, 184, 0.15);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: visible;
+}
+
+.achievement-card-style:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(8, 145, 178, 0.15);
+  border-color: rgba(8, 145, 178, 0.3);
+}
+
+/* Colored banner - matches experience card (ColorThief from logo) */
+.achievement-banner {
+  background: linear-gradient(135deg, #0891b2 0%, #6366f1 50%, #8b5cf6 100%);
+  border-radius: 20px 20px 0 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow: visible;
-  margin-top: 15px;
 }
 
-.certificate-card::before {
-  content: '🏆';
+.achievement-banner::before {
+  content: '';
   position: absolute;
-  top: -10px;
-  right: 15px;
-  font-size: 28px;
-  opacity: 0;
-  z-index: 10;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(10px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
 }
 
-.certificate-detail-div {
-  text-align: center;
-}
-
-.certificate-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(8, 145, 178, 0.12);
-  border-color: rgba(8, 145, 178, 0.2);
-}
-
-.certificate-card:hover::before {
-  opacity: 1;
-  transform: translateY(-5px) scale(1.1);
-}
-
-.certificate-image-div {
+.achievement-banner-title {
   position: relative;
-  height: 120px;
+  z-index: 2;
+  text-align: center;
+  padding: 0.8rem;
+  margin: 0;
+  color: #ffffff;
+  font-size: $fontSizeCardTitle;
+  font-weight: 700;
+  text-overflow: ellipsis;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdf4 100%);
-  border-radius: 16px;
-  margin-bottom: 10px;
+  white-space: nowrap;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
 }
 
-.achievement-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.2rem;
+.achievement-logo-div {
+  display: block;
+  margin: -1rem auto 0 auto;
+  position: relative;
+  z-index: 100;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.achievement-logo-img {
+  object-fit: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.15);
+  border-radius: 14px;
+  border: 3px solid #ffffff;
+  background: #ffffff;
+  padding: 6px;
+}
+
+.achievement-text-details {
+  padding: 0.8rem 1.2rem 1.2rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.achievement-text-header {
+  min-height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.achievement-text-title {
+  text-align: center;
+  color: $titleColor;
+  font-weight: 700;
+  font-size: $fontSizeCardTitleSmall;
+  margin: 0px;
+  padding: 0.8rem 1rem 0;
+  line-height: 1.4;
+  min-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0891b2, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.achievement-text-date {
+  text-align: center;
+  color: $subTitle;
+  font-size: $fontSizeCaption;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Match experience bullet - light grey box, left-aligned text */
+.achievement-description-box {
+  margin-top: 0.25rem;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-size: $fontSizeBodySmall;
+  color: $textColor;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  line-height: 1.5;
+}
+
+.achievement-description-text {
+  margin: 0;
+  color: $textColor;
+  font-size: $fontSizeBodySmall;
+  line-height: 1.5;
 }
 
 .certificate-card-footer {
@@ -87,7 +147,8 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 0.5rem;
+  padding: 0 1.2rem 1rem;
 }
 
 .certificate-card-footer span.certificate-tag {
@@ -115,10 +176,56 @@ span.certificate-tag:hover {
   box-shadow: 0 4px 12px rgba(8, 145, 178, 0.35);
 }
 
+/* Legacy - keep for achievement-cards-div grid */
+.achievement-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+@media (max-width: 1380px) {
+  .achievement-text-header {
+    min-height: 5.5rem;
+  }
+  .achievement-text-title {
+    font-size: $fontSizeBody;
+    min-height: 2.5rem;
+  }
+  .achievement-logo-div {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
 @media (max-width: 768px) {
-  .certificate-card {
-    padding: 1.2rem;
+  .achievement-text-header {
+    min-height: 5rem;
+  }
+  .achievement-card-style {
     border-radius: 16px;
+  }
+  .achievement-banner {
+    border-radius: 16px 16px 0 0;
+    height: 4rem;
+  }
+  .achievement-banner-title {
+    font-size: $fontSizeBody;
+  }
+  .achievement-logo-div {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: -1.5rem;
+  }
+  .achievement-text-title {
+    font-size: $fontSizeBodySmall;
+    min-height: 2.2rem;
+  }
+  .achievement-description-box {
+    font-size: $fontSizeCaption;
+  }
+  .achievement-description-text {
+    font-size: $fontSizeCaption;
   }
   .achievement-cards-div {
     grid-template-columns: 1fr;

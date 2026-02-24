@@ -77,7 +77,7 @@
 a.experience-logo-link,
 div.experience-logo-link {
   display: block;
-  margin: -2rem auto 0 auto;
+  margin: -1rem auto 0 auto;
   position: relative;
   z-index: 100;
   width: 4.5rem;
@@ -127,7 +127,7 @@ div.experience-logo-link:hover .experience-roundedimg {
   background-clip: text;
 }
 
-.experience-text-date {
+.experience-text-datetime-location {
   text-align: center;
   color: $subTitle;
   font-size: $fontSizeCaption;
@@ -135,6 +135,26 @@ div.experience-logo-link:hover .experience-roundedimg {
   padding-top: 0.3rem;
   font-weight: 500;
   letter-spacing: 0.3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.experience-text-date {
+  display: inline-flex;
+  align-items: center;
+}
+
+.experience-text-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.experience-text-location-icon {
+  color: #dc2626;
+  font-size: $fontSizeSmall;
 }
 
 .experience-text-desc {
@@ -144,6 +164,16 @@ div.experience-logo-link:hover .experience-roundedimg {
 .experience-text-details {
   padding: 0.8rem 1.2rem 1.2rem;
   margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-text-header {
+  min-height: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .experience-text-details ul {
@@ -158,7 +188,7 @@ div.experience-logo-link:hover .experience-roundedimg {
   margin-bottom: 0.5rem;
   line-height: 1.5;
   padding: 0.8rem 1rem;
-  text-align: center;
+  text-align: left;
   font-size: $fontSizeBodySmall;
   color: $textColor;
   background: #f8fafc;
@@ -176,7 +206,7 @@ div.experience-logo-link:hover .experience-roundedimg {
   .experience-text-company {
     font-size: $fontSizeCardTitleSmall;
   }
-  .experience-text-date {
+  .experience-text-datetime-location {
     font-size: $fontSizeSmall;
   }
   .experience-logo-link {
@@ -186,6 +216,9 @@ div.experience-logo-link:hover .experience-roundedimg {
 }
 
 @media (max-width: 768px) {
+  .experience-text-header {
+    min-height: 5.5rem;
+  }
   .experience-card {
     border-radius: 16px;
   }
@@ -200,7 +233,7 @@ div.experience-logo-link:hover .experience-roundedimg {
   .experience-text-company {
     font-size: $fontSizeBody;
   }
-  .experience-text-date {
+  .experience-text-datetime-location {
     font-size: $fontSizeSmall;
   }
   .experience-text-desc {

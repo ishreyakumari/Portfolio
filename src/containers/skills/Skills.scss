@@ -32,12 +32,25 @@
 .skills-heading {
   font-size: $fontSizeSectionHeading;
   font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35em;
   background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 15px;
   text-align: left;
+}
+
+.skills-heading span,
+.skills-heading img {
+  -webkit-text-fill-color: initial;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
 }
 
 .subTitle {

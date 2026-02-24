@@ -39,8 +39,16 @@ export default function EducationCard({school}) {
               <h5 className="education-text-subHeader">
                 {school.subHeader}
               </h5>
-              <p className="education-text-duration">
-                {school.duration}
+              <p className="education-text-datetime-location">
+                <span className="education-text-duration">
+                  {school.duration}
+                </span>
+                {school.location && (
+                  <span className="education-text-location">
+                    <i className="fas fa-map-marker-alt education-text-location-icon" aria-hidden="true"></i>
+                    {school.location}
+                  </span>
+                )}
               </p>
               <p className="education-text-desc">{school.desc}</p>
               <div className="education-text-bullets">

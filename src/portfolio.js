@@ -12,7 +12,6 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const greeting = {
-  // username: "ishreyakumari",
   title: "Hi all, I'm Shreya",
   subTitle: emoji(
     "Software Engineer in Test with 4.5+ years of experience building automation frameworks for AI/ML pipelines and distributed systems. M.S. in Computer Science candidate (May 2026)."
@@ -34,7 +33,7 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: emoji("What I do 🛠️"),
   subTitle: "Building automation frameworks for AI/ML pipelines, distributed microservices & high-scale platforms",
   skills: [
     emoji(
@@ -128,6 +127,7 @@ const educationInfo = {
       logo: require("./assets/images/east_bay.png"),
       subHeader: "Master of Science in Computer Science (GPA: 3.57)",
       duration: "August 2024 - May 2026",
+      location: "Hayward, CA, USA",
       desc: "",
       descBullets: []
     },
@@ -136,6 +136,7 @@ const educationInfo = {
       logo: require("./assets/images/guru_gobind.png"),
       subHeader: "Bachelor of Technology in Information Technology (GPA: 3.50)",
       duration: "August 2015 - May 2019",
+      location: "Delhi, India",
       desc: "",
       descBullets: []
     }
@@ -153,6 +154,7 @@ const workExperiences = {
       companylogo: require("./assets/images/quneu_logo.png"),
       companyUrl: "https://www.quneu.com/",
       date: "Jan 2026 – Present",
+      location: "Fort Lauderdale, FL, USA",
       descBullets: [
         "Architected Playwright + PyTest API automation framework from zero in a greenfield startup, establishing backend regression standards across 10+ authentication and file-processing microservices",
         "Designed scalable folder structure, reusable fixtures, and environment config strategy enabling rapid test expansion across dev, staging, and prod",
@@ -166,6 +168,7 @@ const workExperiences = {
       companylogo: require("./assets/images/oatmeal_logo.jpeg"),
       companyUrl: "https://oatmealfarmnetwork.com/",
       date: "Aug 2025 – Dec 2025",
+      location: "San Jose, CA, USA",
       descBullets: [
         "Built Playwright-based regression framework from scratch as sole QA engineer, defining test architecture for AI agent workflows and conversational APIs",
         "Designed REST and WebSocket contract validation pipelines to verify message sequencing, schema integrity, and failure handling across 5+ distributed services",
@@ -179,6 +182,7 @@ const workExperiences = {
       companylogo: require("./assets/images/chegg.png"),
       companyUrl: "https://www.chegg.com/",
       date: "Jun 2022 – Jul 2024",
+      location: "India",
       descBullets: [
         "Scaled automated test coverage by 45% and cut regression execution time by 30% via CI parallelization across 20+ modules of a platform serving 4M+ users globally",
         "Led performance and load testing with JMeter at 10k+ concurrent users, directly contributing to a 20% scalability improvement",
@@ -191,6 +195,7 @@ const workExperiences = {
       companylogo: require("./assets/images/infosys.png"),
       companyUrl: "https://www.infosys.com/",
       date: "Jan 2020 – May 2022",
+      location: "India",
       descBullets: [
         "Reduced manual regression effort by 50% and framework maintenance overhead by 30% through Java-based Page Object Model design across a 3-tier enterprise application",
         "Reduced post-production defects by 25% via structured defect triage, release checklists, and cross-team validation processes integrated into sprint cycles"
@@ -199,18 +204,10 @@ const workExperiences = {
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Key Projects",
+  title: emoji("Key Projects 🚀"),
   subtitle: "",
   projects: [
     {
@@ -252,28 +249,36 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "OSCAR Scholarship [2025-2026] - CSU East Bay",
+      title: "OSCAR Scholarship - CSU East Bay",
+      organization: "CSU East Bay",
+      date: "[2025-2026]",
       subtitle:
         "Awarded OSCAR Scholarship for excellence in AI-driven testing research. Recognized for outstanding contributions to automation testing and AI integration research.",
       image: require("./assets/images/east_bay.png"),
       imageAlt: "OSCAR Scholarship Logo"
     },
     {
-      title: "Vice President - Society of Women Engineers [2024-2025] - CSU East Bay",
+      title: "Vice President - Society of Women Engineers - CSU East Bay",
+      organization: "CSU East Bay",
+      date: "[2024-2025]",
       subtitle:
         "Led chapter initiatives to promote women in STEM, organized technical workshops and networking events. Mentored 50+ students and increased chapter membership by 40% through outreach programs.",
       image: require("./assets/images/east_bay.png"),
       imageAlt: "SWE Logo"
     },
     {
-      title: "Star Achiever Award 2024 - Chegg Inc.",
+      title: "Star Achiever Award - Chegg Inc.",
+      organization: "Chegg Inc.",
+      date: "2024",
       subtitle:
         "Recognized for outstanding contributions to automation and QA optimization in the Chegg AI Integration Project. Awarded for exceptional performance in delivering high-impact testing solutions.",
       image: require("./assets/images/chegg.png"),
       imageAlt: "Chegg Award Logo"
     },
     {
-      title: "Best Innovator Award 2022 - Chegg Inc.",
+      title: "Best Innovator Award - Chegg Inc.",
+      organization: "Chegg Inc.",
+      date: "2022",
       subtitle:
         "Honored for developing scalable automation frameworks. Recognized for innovation in test automation and system optimization.",
       image: require("./assets/images/chegg.png"),
@@ -294,9 +299,9 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: "Contact Me",
+  title: emoji("Contact Me 📧"),
   subtitle:
-    "Interested in my work or want to discuss a project? I'd love to hear from you - reach out via email.",
+    "Interested in my work or want to discuss a project?\nI'd love to hear from you!\nReach out via email.",
   email_address: "ishreyakumari2026@gmail.com"
 };
 
@@ -309,7 +314,6 @@ export {
   skillsSection,
   educationInfo,
   workExperiences,
-  openSource,
   bigProjects,
   achievementSection,
   contactInfo,

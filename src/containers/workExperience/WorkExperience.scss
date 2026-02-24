@@ -10,11 +10,20 @@
 .experience-heading {
   font-size: $fontSizeSectionHeading;
   font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35em;
   background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 1.5rem;
+}
+
+.experience-heading span {
+  -webkit-text-fill-color: initial;
+  background: none;
 }
 
 .experience-container {

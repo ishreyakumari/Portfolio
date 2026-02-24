@@ -3,7 +3,6 @@ import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
 import WorkExperience from "./workExperience/WorkExperience";
-import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Contact from "./contact/Contact";
@@ -44,7 +43,6 @@ const Main = () => {
             <Skills />
             <Education />
             <WorkExperience />
-            <Projects />
             <StartupProject />
             <Achievement />
             <Contact />

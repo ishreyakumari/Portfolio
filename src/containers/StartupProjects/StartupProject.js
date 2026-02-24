@@ -20,16 +20,23 @@ export default function StartupProject() {
       <div className="main" id="projects">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
-          <p className="subTitle project-subtitle">
-            {bigProjects.subtitle}
-          </p>
+          {bigProjects.subtitle && (
+            <p className="subTitle project-subtitle">
+              {bigProjects.subtitle}
+            </p>
+          )}
 
           <div className="projects-container">
             {bigProjects.projects.map((project, i) => {
+              const projectUrl = project.footerLink?.[0]?.url;
               return (
                 <div
                   key={i}
-                  className="project-card project-card-light"
+                  className={`project-card project-card-light ${projectUrl ? "project-card-clickable" : ""}`}
+                  onClick={() => projectUrl && openUrlInNewTab(projectUrl)}
+                  role={projectUrl ? "button" : undefined}
+                  tabIndex={projectUrl ? 0 : undefined}
+                  onKeyDown={(e) => projectUrl && (e.key === "Enter" || e.key === " ") && openUrlInNewTab(projectUrl)}
                 >
                   {project.image ? (
                     <div className="project-image">
@@ -54,7 +61,10 @@ export default function StartupProject() {
                             <span
                               key={i}
                               className="project-tag"
-                              onClick={() => openUrlInNewTab(link.url)}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                openUrlInNewTab(link.url);
+                              }}
                             >
                               {link.name}
                             </span>

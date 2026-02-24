@@ -16,9 +16,11 @@ export default function Achievement() {
             <h1 className="heading achievement-heading">
               {achievementSection.title}
             </h1>
-            <p className="subTitle achievement-subtitle">
-              {achievementSection.subtitle}
-            </p>
+            {achievementSection.subtitle && (
+              <p className="subTitle achievement-subtitle">
+                {achievementSection.subtitle}
+              </p>
+            )}
           </div>
           <div className="achievement-cards-div">
             {achievementSection.achievementsCards.map((card, i) => {
@@ -27,6 +29,8 @@ export default function Achievement() {
                   key={i}
                   cardInfo={{
                     title: card.title,
+                    organization: card.organization || card.title,
+                    date: card.date,
                     description: card.subtitle,
                     image: card.image,
                     imageAlt: card.imageAlt,

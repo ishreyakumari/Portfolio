@@ -64,12 +64,20 @@ export default function ExperienceCard({cardInfo}) {
         </div>
       )}
       <div className="experience-text-details">
-        <h5 className="experience-text-role">
-          {cardInfo.role}
-        </h5>
-        <h5 className="experience-text-date">
-          {cardInfo.date}
-        </h5>
+        <div className="experience-text-header">
+          <h5 className="experience-text-role">
+            {cardInfo.role}
+          </h5>
+          <div className="experience-text-datetime-location">
+            <span className="experience-text-date">{cardInfo.date}</span>
+            {cardInfo.location && (
+              <span className="experience-text-location">
+                <i className="fas fa-map-marker-alt experience-text-location-icon" aria-hidden="true"></i>
+                {cardInfo.location}
+              </span>
+            )}
+          </div>
+        </div>
 
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} />
