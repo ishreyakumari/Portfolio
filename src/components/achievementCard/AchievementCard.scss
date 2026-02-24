@@ -85,6 +85,8 @@
   margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 
 /* Title on top, date at bottom of fixed row - all dates on same horizontal line */
@@ -126,7 +128,7 @@
   letter-spacing: 0.3px;
 }
 
-/* Match experience bullet - light grey box, left-aligned text */
+/* Match experience bullet - light grey box, left-aligned text, same height for uniform gaps */
 .achievement-description-box {
   margin-top: 0.25rem;
   padding: 0.8rem 1rem;
@@ -137,6 +139,8 @@
   border-radius: 10px;
   border: 1px solid rgba(148, 163, 184, 0.2);
   line-height: 1.5;
+  min-height: 5.5rem;
+  flex: 1;
 }
 
 .achievement-description-text {

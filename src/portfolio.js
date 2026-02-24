@@ -156,7 +156,7 @@ const workExperiences = {
       date: "Jan 2026 – Present",
       location: "Fort Lauderdale, FL, USA",
       descBullets: [
-        "Architected Playwright + PyTest API automation framework from zero in a greenfield startup, establishing backend regression standards across 10+ authentication and file-processing microservices",
+        "Architected Playwright + PyTest API automation framework from zero, establishing backend regression standards across 10+ authentication and file-processing microservices",
         "Designed scalable folder structure, reusable fixtures, and environment config strategy enabling rapid test expansion across dev, staging, and prod",
         "Built validation suite for multipart uploads, bulk ingestion workflows, and async AI/ML pipelines processing 10k+ documents",
         "Integrated CI-based regression execution into GitHub Actions, reducing manual verification overhead by 60%"
@@ -184,9 +184,10 @@ const workExperiences = {
       date: "Jun 2022 – Jul 2024",
       location: "India",
       descBullets: [
-        "Scaled automated test coverage by 45% and cut regression execution time by 30% via CI parallelization across 20+ modules of a platform serving 4M+ users globally",
-        "Led performance and load testing with JMeter at 10k+ concurrent users, directly contributing to a 20% scalability improvement",
-        "Drove production defect root cause analysis using Splunk and Datadog, identifying recurring failure patterns and reducing post-release incidents by 35%"
+        "Scaled automated test coverage by 45% via CI parallelization across 20+ modules of a platform serving 4M+ users globally",
+        "Cut regression execution time by 30% through optimized test orchestration and parallel execution",
+        "Led performance and load testing with JMeter at 10k+ concurrent users, contributing to 20% scalability improvement",
+        "Drove production defect root cause analysis using Splunk and Datadog, reducing post-release incidents by 35%"
       ]
     },
     {
@@ -197,8 +198,10 @@ const workExperiences = {
       date: "Jan 2020 – May 2022",
       location: "India",
       descBullets: [
-        "Reduced manual regression effort by 50% and framework maintenance overhead by 30% through Java-based Page Object Model design across a 3-tier enterprise application",
-        "Reduced post-production defects by 25% via structured defect triage, release checklists, and cross-team validation processes integrated into sprint cycles"
+        "Reduced manual regression effort by 50% through Java-based Page Object Model design across a 3-tier enterprise application",
+        "Reduced framework maintenance overhead by 30% across a 3-tier enterprise application",
+        "Reduced post-production defects by 25% via structured defect triage and release checklists",
+        "Integrated cross-team validation processes into sprint cycles for improved release quality"
       ]
     }
   ]

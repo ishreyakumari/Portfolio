@@ -2,6 +2,8 @@
 
 .experience-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: $lightBackground2;
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
   border-radius: 20px;
@@ -166,26 +168,34 @@ div.experience-logo-link:hover .experience-roundedimg {
   margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 
 .experience-text-header {
+  height: 6.5rem;
   min-height: 6.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .experience-text-details ul {
   padding-left: 0;
   margin-top: 0.5rem;
   margin-left: 0;
+  margin-right: 0;
   text-align: left;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
 }
 
 .experience-text-details ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   line-height: 1.5;
   padding: 0.8rem 1rem;
   text-align: left;
@@ -194,6 +204,10 @@ div.experience-logo-link:hover .experience-roundedimg {
   background: #f8fafc;
   border-radius: 10px;
   border: 1px solid rgba(148, 163, 184, 0.2);
+  min-height: 4.5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 /* Media Query */
