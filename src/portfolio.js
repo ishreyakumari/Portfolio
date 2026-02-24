@@ -158,7 +158,7 @@ const workExperiences = {
       descBullets: [
         "Architected Playwright + PyTest API automation framework from zero, establishing backend regression standards across 10+ authentication and file-processing microservices",
         "Designed scalable folder structure, reusable fixtures, and environment config strategy enabling rapid test expansion across dev, staging, and prod",
-        "Built validation suite for multipart uploads, bulk ingestion workflows, and async AI/ML pipelines processing 10k+ documents",
+        "Built validation suite for multipart uploads, bulk ingestion workflows, and async AI/ML pipelines",
         "Integrated CI-based regression execution into GitHub Actions, reducing manual verification overhead by 60%"
       ]
     },
