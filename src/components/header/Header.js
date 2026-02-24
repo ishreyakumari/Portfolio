@@ -4,16 +4,19 @@ import SocialMedia from "../socialMedia/SocialMedia";
 import {
   workExperiences,
   skillsSection,
+  educationInfo,
   bigProjects,
   achievementSection,
   resumeSection
 } from "../../portfolio";
 
 function Header() {
+  const viewSkills = skillsSection.display;
+  const viewEducation = educationInfo.display;
   const viewExperience = workExperiences.display;
   const viewProjects = bigProjects.display;
-  const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
+  const viewContact = true;
   const viewResume = resumeSection.display;
 
   return (
@@ -39,9 +42,14 @@ function Header() {
               <a href="#skills">Skills</a>
             </li>
           )}
+          {viewEducation && (
+            <li>
+              <a href="#education">Education</a>
+            </li>
+          )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">Experiences</a>
             </li>
           )}
           {viewProjects && (
@@ -52,6 +60,11 @@ function Header() {
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
+            </li>
+          )}
+          {viewContact && (
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           )}
           {viewResume && (

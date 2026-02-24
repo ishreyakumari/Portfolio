@@ -5,17 +5,21 @@
   padding-top: 70px;
 }
 
-/* Scroll offset for fixed header */
-#skills {
-  scroll-margin-top: 0;
+/* Scroll offset for fixed header - keeps section titles visible below nav */
+#skills,
+#contact {
+  scroll-margin-top: 25px;
 }
 
-#experience,
-#projects,
-#contact {
-  scroll-margin-top: 20px;
+#projects {
+  scroll-margin-top: 35px;
+}
+
+#education,
+#experience {
+  scroll-margin-top: 45px;
 }
 
 #achievements {
-  scroll-margin-top: 45px;
+  scroll-margin-top: 60px;
 }

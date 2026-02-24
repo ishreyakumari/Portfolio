@@ -1,5 +1,16 @@
 @import "../../_globalColor";
 
+/* Education: match text and icon to same color (indigo) */
+.education-section .experience-heading {
+  color: #6366f1 !important;
+  background: none !important;
+  -webkit-text-fill-color: #6366f1 !important;
+}
+
+.education-section .experience-heading img {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(228deg) brightness(95%) contrast(92%);
+}
+
 .education-heading {
   font-size: $fontSizeSectionHeading;
   font-weight: 700;
@@ -8,15 +19,20 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.35em;
-  background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: transparent !important;
+  background: linear-gradient(135deg, #0891b2 0%, #6366f1 50%, #8b5cf6 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
 }
 
-.education-heading span {
+.education-heading span,
+.education-heading img {
   -webkit-text-fill-color: initial;
-  background: none;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
 }
 
 .education-section {
