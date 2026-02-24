@@ -13,11 +13,6 @@ export default function Contact() {
             <p className="contact-subtitle">
               {contactInfo.subtitle}
             </p>
-            {contactInfo.ctaMessage && (
-              <p className="contact-cta">
-                {contactInfo.ctaMessage}
-              </p>
-            )}
             <div className="contact-text-div">
               {contactInfo.number && (
                 <>

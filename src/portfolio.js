@@ -296,9 +296,7 @@ const resumeSection = {
 const contactInfo = {
   title: "Contact Me",
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  ctaMessage:
-    "Interested in my work or have an opportunity to discuss? I'd love to hear from you - reach out via email or LinkedIn.",
+    "Interested in my work or want to discuss a project? I'd love to hear from you - reach out via email.",
   email_address: "ishreyakumari2026@gmail.com"
 };
 
