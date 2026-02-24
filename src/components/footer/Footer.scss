@@ -3,13 +3,24 @@
 .footer-text {
   text-align: center;
   color: $subTitle !important;
+  font-size: 14px;
+  padding: 15px 0;
 }
 
-.dark-mode {
-  color: $textColorDark !important;
+.footer-text a {
+  color: #0891b2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+  color: #6366f1;
 }
 
 .footer-div {
-  margin-top: 1rem;
-  padding-bottom: 0.8rem;
+  margin-top: 2rem;
+  padding: 20px 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+  background: linear-gradient(180deg, transparent 0%, rgba(8, 145, 178, 0.02) 100%);
 }

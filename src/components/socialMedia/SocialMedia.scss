@@ -2,6 +2,9 @@
 
 .social-media-div {
   font-size: 2em;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .icon-button {
@@ -10,22 +13,29 @@
 
 .icon-button i {
   color: $textColorDark;
-  border-radius: 2.6rem;
+  border-radius: 14px;
   cursor: pointer;
-  display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  height: 2.8rem;
+  width: 2.8rem;
+  margin: 0;
   position: relative;
   text-align: center;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 2.6rem;
   margin-bottom: 10px;
-  transition: 0.2s ease-in;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.icon-button i:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .facebook i {
@@ -33,11 +43,11 @@
 }
 
 .linkedin i {
-  background-color: $linkedin;
+  background: linear-gradient(135deg, #0077b5 0%, #0a66c2 100%);
 }
 
 .github i {
-  background-color: $github;
+  background: linear-gradient(135deg, #24292e 0%, #1e293b 100%);
 }
 
 .gitlab i {
@@ -45,11 +55,11 @@
 }
 
 .google i {
-  background-color: $google;
+  background: linear-gradient(135deg, #ea4335 0%, #fbbc05 50%, #34a853 100%);
 }
 
 .twitter i {
-  background-color: $twitter;
+  background: linear-gradient(135deg, #1da1f2 0%, #0d8bd9 100%);
 }
 
 .medium i {
@@ -57,7 +67,7 @@
 }
 
 .stack-overflow i {
-  background-color: $stackoverflow;
+  background: linear-gradient(135deg, #f48024 0%, #ef8236 100%);
 }
 
 .kaggle i {
@@ -65,7 +75,7 @@
 }
 
 .instagram i {
-  background-color: $instagram;
+  background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
 }
 
 /* Hover Transition */
@@ -79,12 +89,19 @@
 .stack-overflow i:hover,
 .kaggle i:hover,
 .medium i:hover {
-  background-color: $textColor;
+  filter: brightness(1.1);
 }
 
 /* Media Query */
 @media (max-width: 768px) {
   .social-media-div {
     text-align: center;
+    justify-content: center;
+  }
+  .icon-button i {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
   }
 }

@@ -1,8 +1,7 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
@@ -13,7 +12,6 @@ export default function StartupProject() {
     win.focus();
   }
 
-  const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
   }
@@ -22,13 +20,7 @@ export default function StartupProject() {
       <div className="main" id="projects">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
-          <p
-            className={
-              isDark
-                ? "dark-mode project-subtitle"
-                : "subTitle project-subtitle"
-            }
-          >
+          <p className="subTitle project-subtitle">
             {bigProjects.subtitle}
           </p>
 
@@ -37,11 +29,7 @@ export default function StartupProject() {
               return (
                 <div
                   key={i}
-                  className={
-                    isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
-                  }
+                  className="project-card project-card-light"
                 >
                   {project.image ? (
                     <div className="project-image">
@@ -53,16 +41,10 @@ export default function StartupProject() {
                     </div>
                   ) : null}
                   <div className="project-detail">
-                    <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
-                    >
+                    <h5 className="card-title">
                       {project.projectName}
                     </h5>
-                    <p
-                      className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
-                      }
-                    >
+                    <p className="card-subtitle">
                       {project.projectDesc}
                     </p>
                     {project.footerLink ? (
@@ -71,9 +53,7 @@ export default function StartupProject() {
                           return (
                             <span
                               key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
+                              className="project-tag"
                               onClick={() => openUrlInNewTab(link.url)}
                             >
                               {link.name}

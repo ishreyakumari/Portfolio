@@ -3,26 +3,31 @@
 .education-card {
   display: flex;
   flex-direction: row;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(8, 145, 178, 0.1);
+  border-color: rgba(8, 145, 178, 0.2);
 }
 
 .education-card:hover + .education-card-border {
-  border-color: $educationCardBorder;
+  border-color: #0891b2;
   width: 100%;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
-  transition: width 0.6s ease-in-out;
 }
 
 .education-card-border {
-  height: 20px;
-  width: 80%;
-  border-top: 2px solid $lightBorder1;
-  margin-bottom: 15px;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
-  transition: width 0.6s ease-in-out;
+  height: 0;
+  width: 0;
+  border: none;
+  margin-bottom: 0;
 }
 
 .education-head {
@@ -32,21 +37,27 @@
 
 .education-text-school {
   margin: 0;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  height: 27px;
+  background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .education-roundedimg {
   object-fit: cover;
   margin-right: 2rem;
-  width: 6rem;
-  height: 6rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
-  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  box-shadow: 0 8px 25px rgba(8, 145, 178, 0.15);
+  border-radius: 16px;
+  border: 3px solid #ffffff;
+  background: #ffffff;
+  padding: 8px;
 }
 
 .education-card-right {
@@ -55,23 +66,34 @@
 
 .education-text-subHeader {
   color: $textColor;
-  font-weight: 700;
-  font-size: 19px;
+  font-weight: 600;
+  font-size: 16px;
   margin: 0px;
-  padding-top: 0.8rem;
+  padding-top: 0.5rem;
   line-height: normal;
 }
 
 .education-text-duration {
-  color: $titleColor;
-  font-size: 19px;
+  color: $subTitle;
+  font-size: 14px;
   margin: 0px;
-  padding-top: 0.5rem;
+  padding-top: 0.4rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.education-text-duration::before {
+  content: '📅';
+  font-size: 12px;
 }
 
 .education-text-desc {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  color: $cardSubtitle;
+  font-size: 14px;
 }
 
 .education-text-bullets > ul {
@@ -83,24 +105,20 @@
 @media (max-width: 1380px) {
   .education-card {
     flex-direction: column;
-    padding-bottom: 10px;
+    padding: 20px;
   }
   .education-card-right {
-    max-width: 90%;
-  }
-  .education-card-border {
-    width: 90%;
+    max-width: 100%;
   }
   .education-text-subHeader {
     padding-top: 0.5rem;
-    font-size: 16px;
+    font-size: 15px;
   }
   .education-text-school {
-    font-size: 20px;
-    height: 23px;
+    font-size: 18px;
   }
   .education-text-duration {
-    font-size: 16px;
+    font-size: 13px;
   }
   .education-roundedimg {
     width: 4rem;
@@ -113,22 +131,20 @@
 @media (max-width: 768px) {
   .education-card {
     text-align: center;
+    border-radius: 16px;
+    padding: 20px 15px;
   }
   .education-card-right {
     max-width: 100%;
   }
-  .education-card-border {
-    width: 100%;
-  }
   .education-roundedimg {
-    margin-top: 10px;
+    margin: 0 auto 15px auto;
     width: 4rem;
     height: 4rem;
-    margin-bottom: 1rem;
-    margin-right: 0;
   }
   .education-text-bullets > ul {
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
+    text-align: left;
   }
 }

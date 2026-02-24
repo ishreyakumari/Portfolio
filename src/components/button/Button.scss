@@ -1,47 +1,80 @@
 @import "../../_globalColor";
 
 .main-button {
-  background-color: $buttonColor;
-  border: solid 1px $buttonColor;
-  color: $textColorDark;
-  font-weight: 700;
+  background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
   width: max-content;
-  padding: 13px 22px;
-  margin-right: 50px;
-  text-transform: uppercase;
-  border-radius: 6px;
+  padding: 14px 28px;
+  margin-right: 15px;
+  text-transform: none;
+  border-radius: 12px;
   text-align: center;
   text-decoration: none;
-  display: block;
-  margin-top: 20px;
-  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(8, 145, 178, 0.3);
+  position: relative;
+  overflow: hidden;
 }
+
+.main-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
 .main-button:hover {
-  background-color: $darkBoxShadow2;
-  color: $buttonColor;
-  transition: all 0.3s ease 0s;
   transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(8, 145, 178, 0.4);
 }
+
+.main-button:hover::before {
+  left: 100%;
+}
+
+.main-button:active {
+  transform: translateY(-1px);
+}
+
 .project-button {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
+
 .project-button > .main-button {
   margin-right: 0 !important;
+  padding: 12px 24px;
+  font-size: 0.9rem;
 }
+
 /* Media Query */
 @media (max-width: 768px) {
   .main-button {
-    font-size: 0.938rem;
-    padding: 12px 18px;
+    font-size: 0.9rem;
+    padding: 12px 20px;
     margin-right: 0px;
+    border-radius: 10px;
   }
 }
+
 @media (max-width: 320px) {
   .main-button {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    padding: 10px 18px;
   }
 }

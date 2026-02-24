@@ -1,15 +1,12 @@
-import React, {useContext} from "react";
+import React from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
+import {greeting} from "../../portfolio";
+import profileImage from "../../assets/images/profile.png";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -19,27 +16,19 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1
-                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
-              >
+              <h1 className="greeting-text">
                 {" "}
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
+              <p className="greeting-text-p subTitle">
                 {greeting.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
               <div className="button-greeting-div">
                 {greeting.resumeLink && (
                       <a
-                        href="https://drive.google.com/file/d/1hb99EM0rwUhyXbdOxcdD3GLd3OdFEOGe/view"
+                        href="https://drive.google.com/file/d/1tPCrZcqig7nZX4Pq2fXaMndlUUyQ24yR/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="download-link-button"
@@ -51,14 +40,13 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
+            <div className="profile-image-container">
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
+                alt="Shreya Kumari"
+                src={profileImage}
+                className="profile-image"
+              />
+            </div>
           </div>
         </div>
       </div>

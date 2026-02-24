@@ -4,10 +4,18 @@
   display: flex;
   width: 100%;
   overflow: hidden;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .skills-text-div {
-  margin-left: 30px;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.skills-text-subtitle {
+  text-align: left;
+  max-width: 500px;
 }
 
 .skills-main-div > * {
@@ -16,37 +24,67 @@
 }
 
 .skills-image-div > img {
-  max-width: 80%;
+  max-width: 85%;
   height: auto;
+  filter: drop-shadow(0 15px 30px rgba(8, 145, 178, 0.1));
 }
 
 .skills-heading {
-  font-size: 45px;
-  font-weight: 400;
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0891b2 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+  text-align: left;
 }
+
 .subTitle {
-  color: $subTitle;
+  color: $textColor;
+  font-size: 15px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, rgba(8, 145, 178, 0.08), rgba(99, 102, 241, 0.08));
+  border-radius: 10px;
+  border: 1px solid rgba(8, 145, 178, 0.15);
 }
 
 .skills-text {
-  line-height: 1.4;
-  margin-bottom: 8px;
+  line-height: 1.7;
+  margin-bottom: 12px;
   text-align: left;
   overflow-wrap: break-word;
   white-space: normal;
   min-width: 0;
   flex-shrink: 1;
+  font-size: 1rem;
+  color: $textColor;
+  padding-left: 5px;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.skills-text:hover {
+  border-left-color: #0891b2;
+  padding-left: 15px;
+  background: linear-gradient(90deg, rgba(8, 145, 178, 0.05), transparent);
 }
 
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {
-    font-size: 35px;
+    font-size: 32px;
   }
 }
+
 @media (max-width: 768px) {
   .skills-heading {
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
   }
   .greeting-text-p {
@@ -61,18 +99,21 @@
     margin: 15px;
   }
   .skills-text {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.6;
     text-align: left;
     overflow-wrap: break-word;
     white-space: normal;
   }
   .skills-text-subtitle {
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
   }
+  .subTitle {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
   .skills-image-div {
-    /* display: none; */
     order: 2;
   }
 }

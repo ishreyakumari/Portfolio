@@ -1,8 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
-import StyleContext from "../../contexts/StyleContext";
 import {
   workExperiences,
   skillsSection,
@@ -12,21 +10,16 @@ import {
 } from "../../portfolio";
 
 function Header() {
-  const { isDark } = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewProjects = bigProjects.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
-  // const viewBlog = blogSection.display;
-  // const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
 
   return (
     <Headroom>
-      <header className={isDark ? "dark-menu header" : "header"}>
+      <header className="header">
         <a href="/" className="logo">
-          {/* <span className="grey-color"> &lt;</span>
-          <span className="grey-color">/&gt;</span> */}
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -34,9 +27,9 @@ function Header() {
           htmlFor="menu-btn"
           style={{ color: "white" }}
         >
-          <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
+          <span className="navicon"></span>
         </label>
-        <ul className={isDark ? "dark-menu menu" : "menu"}>
+        <ul className="menu">
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
@@ -60,7 +53,7 @@ function Header() {
           {viewResume && (
             <li>
               <a
-                href="https://drive.google.com/uc?export=download&id=1hb99EM0rwUhyXbdOxcdD3GLd3OdFEOGe"
+                href="https://drive.google.com/uc?export=download&id=1tPCrZcqig7nZX4Pq2fXaMndlUUyQ24yR"
                 download
                 className="nav-link"
               >
@@ -68,12 +61,6 @@ function Header() {
               </a>
             </li>
           )}
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
-          </li>
         </ul>
       </header>
     </Headroom>

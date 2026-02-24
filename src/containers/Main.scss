@@ -1,9 +1,12 @@
 @import "../_globalColor";
 
-.dark-mode {
-  background-color: $darkBackground;
-  color: white;
-  transition: "0.1s";
+/* Scroll offset for fixed header and social icons */
+#skills,
+#experience,
+#projects,
+#achievements,
+#contact {
+  scroll-margin-top: 100px;
 }
 
 .social-media-top {
@@ -35,12 +38,6 @@
 
 .social-media-top .icon-button i:hover {
   transform: scale(1.1);
-}
-
-/* Dark mode styles for top social media */
-.dark-mode .social-media-top {
-  background: rgba(23, 28, 40, 0.9);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
 /* Mobile responsive for top social media */
