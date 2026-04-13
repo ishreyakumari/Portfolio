@@ -1,32 +1,19 @@
 @import "../../_globalColor";
 
 .skills-main-div {
-  display: flex;
   width: 100%;
-  overflow: hidden;
-  align-items: center;
-  padding: 20px 0;
+  padding: 12px 0 4px;
 }
 
 .skills-text-div {
-  margin-left: 40px;
+  margin-left: 0;
   text-align: left;
+  width: 100%;
 }
 
 .skills-text-subtitle {
   text-align: left;
   max-width: 500px;
-}
-
-.skills-main-div > * {
-  flex: 1;
-  margin-bottom: 10px;
-}
-
-.skills-image-div > img {
-  max-width: 85%;
-  height: auto;
-  filter: drop-shadow(0 15px 30px rgba(8, 145, 178, 0.1));
 }
 
 .skills-heading {
@@ -40,7 +27,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   text-align: left;
 }
 
@@ -53,7 +40,7 @@
   box-shadow: none !important;
 }
 
-.subTitle {
+.skills-text-div .subTitle {
   color: $textColor;
   font-size: $fontSizeBody;
   text-transform: none;
@@ -67,27 +54,6 @@
   border: 1px solid rgba(8, 145, 178, 0.15);
 }
 
-.skills-text {
-  line-height: 1.7;
-  margin-bottom: 12px;
-  text-align: left;
-  overflow-wrap: break-word;
-  white-space: normal;
-  min-width: 0;
-  flex-shrink: 1;
-  font-size: $fontSizeBody;
-  color: $textColor;
-  padding-left: 5px;
-  border-left: 3px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.skills-text:hover {
-  border-left-color: #0891b2;
-  padding-left: 15px;
-  background: linear-gradient(90deg, rgba(8, 145, 178, 0.05), transparent);
-}
-
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {
@@ -98,35 +64,17 @@
 @media (max-width: 768px) {
   .skills-heading {
     font-size: $fontSizeSectionHeadingMobile;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: $fontSizeBody;
-    line-height: normal;
-  }
-  .skills-main-div {
-    flex-direction: column;
+    text-align: left;
   }
   .skills-text-div {
     margin-left: 0px;
-    margin: 15px;
-  }
-  .skills-text {
-    font-size: $fontSizeBodySmall;
-    line-height: 1.6;
-    text-align: left;
-    overflow-wrap: break-word;
-    white-space: normal;
+    margin: 0;
   }
   .skills-text-subtitle {
-    font-size: $fontSizeSmall;
-    text-align: center;
+    text-align: left;
   }
-  .subTitle {
+  .skills-text-div .subTitle {
     font-size: $fontSizeCaption;
     padding: 8px 14px;
-  }
-  .skills-image-div {
-    order: 2;
   }
 }

@@ -7,8 +7,8 @@
   margin-bottom: 0px;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
   align-items: stretch;
   justify-items: stretch;
 }
@@ -26,7 +26,7 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   min-width: 0;
-  min-height: 100px;
+  min-height: 122px;
   box-sizing: border-box;
 }
 
@@ -49,11 +49,14 @@
 
 .software-skill-inline > p {
   color: #64748b;
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 600;
   margin-top: 8px;
   margin-bottom: 0;
   transition: all 0.3s ease;
+  text-align: center;
+  word-break: break-word;
 }
 
 .software-skill-inline:hover > p {
@@ -73,9 +76,10 @@
   }
   .software-skill-inline {
     padding: 12px 16px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    min-height: 112px;
   }
   .software-skill-inline > p {
-    font-size: 10px;
+    font-size: 11px;
   }
 }

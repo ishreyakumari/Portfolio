@@ -3,8 +3,6 @@ import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import codingPerson from "../../assets/lottie/codingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function Skills() {
   if (!skillsSection.display) {
@@ -13,12 +11,7 @@ export default function Skills() {
   return (
     <div className="main" id="skills">
       <div className="skills-main-div">
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
-            <DisplayLottie animationData={codingPerson} />
-          </div>
-        </Fade>
-        <Fade right duration={1000}>
+        <Fade bottom duration={1000}>
           <div className="skills-text-div">
             <h1 className="skills-heading">
               {skillsSection.title}{" "}
@@ -29,18 +22,6 @@ export default function Skills() {
               </p>
             )}
             <SoftwareSkill />
-            <div>
-              {skillsSection.skills.map((skills, i) => {
-                return (
-                  <p
-                    key={i}
-                    className="subTitle skills-text"
-                  >
-                    {skills}
-                  </p>
-                );
-              })}
-            </div>
           </div>
         </Fade>
       </div>

@@ -46,22 +46,39 @@ const contactInfo = {
 const skillsSection = {
   title: emoji("Technical Skills 🛠️"),
   subTitle: "",
-  skills: [
-    emoji(
-      "Automation & Languages: Playwright, Selenium WebDriver, Appium, PyTest, TestNG, REST Assured, Python, JavaScript/TypeScript, SQL, Contract Testing"
-    ),
-    emoji(
-      "CI/CD, Cloud & Observability: GitHub Actions, Jenkins, Docker, AWS (EC2, S3, Lambda, ECS), GitLab CI/CD, Datadog, Splunk, JMeter, Locust, AI/LLM Testing, ETL Validation"
-    )
-  ],
+  skills: [],
 
   softwareSkills: [
+    {
+      skillName: "Test Automation Architecture",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    },
+    {
+      skillName: "Distributed Systems Testing",
+      fontAwesomeClassname: "fas fa-network-wired"
+    },
+    {
+      skillName: "CI/CD & Quality Engineering",
+      fontAwesomeClassname: "fas fa-cogs"
+    },
+    {
+      skillName: "End-to-End (E2E) Testing",
+      fontAwesomeClassname: "fas fa-check-double"
+    },
+    {
+      skillName: "Test Automation Framework Development",
+      fontAwesomeClassname: "fas fa-layer-group"
+    },
+    {
+      skillName: "PyTest",
+      fontAwesomeClassname: "fas fa-flask"
+    },
     {
       skillName: "Playwright",
       fontAwesomeClassname: "fas fa-code"
     },
     {
-      skillName: "Selenium",
+      skillName: "Selenium WebDriver",
       fontAwesomeClassname: "fas fa-vial"
     },
     {
@@ -69,16 +86,44 @@ const skillsSection = {
       fontAwesomeClassname: "fas fa-mobile-alt"
     },
     {
-      skillName: "PyTest",
-      fontAwesomeClassname: "fas fa-flask"
+      skillName: "REST Assured",
+      fontAwesomeClassname: "fas fa-exchange-alt"
     },
     {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "TestNG",
+      fontAwesomeClassname: "fas fa-tasks"
     },
     {
-      skillName: "TypeScript",
-      fontAwesomeClassname: "fas fa-file-code"
+      skillName: "AI/LLM Testing",
+      fontAwesomeClassname: "fas fa-robot"
+    },
+    {
+      skillName: "Test Reliability Engineering (Flaky Test Reduction)",
+      fontAwesomeClassname: "fas fa-shield-alt"
+    },
+    {
+      skillName: "Parallel Test Execution",
+      fontAwesomeClassname: "fas fa-stream"
+    },
+    {
+      skillName: "Contract Testing",
+      fontAwesomeClassname: "fas fa-file-signature"
+    },
+    {
+      skillName: "Schema Validation",
+      fontAwesomeClassname: "fas fa-check-circle"
+    },
+    {
+      skillName: "API Testing",
+      fontAwesomeClassname: "fas fa-plug"
+    },
+    {
+      skillName: "Backend Integration Testing",
+      fontAwesomeClassname: "fas fa-server"
+    },
+    {
+      skillName: "Data Validation / ETL Testing",
+      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "SQL",
@@ -97,8 +142,12 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "AWS",
+      skillName: "AWS (EC2, S3, Lambda, ECS)",
       fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "GitLab CI/CD",
+      fontAwesomeClassname: "fab fa-gitlab"
     },
     {
       skillName: "Datadog",
@@ -107,6 +156,14 @@ const skillsSection = {
     {
       skillName: "Splunk",
       fontAwesomeClassname: "fas fa-search"
+    },
+    {
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "JavaScript / TypeScript",
+      fontAwesomeClassname: "fab fa-js"
     }
   ],
   display: true
