@@ -29,7 +29,7 @@ export default function Greeting() {
                 {greeting.resumeLink && (
                   <Button 
                     text="View my resume" 
-                    href="https://drive.google.com/file/d/1tPCrZcqig7nZX4Pq2fXaMndlUUyQ24yR/view?usp=sharing"
+                    href={greeting.resumeLink}
                     newTab={true}
                   />
                 )}

@@ -14,10 +14,10 @@ const splashScreen = {
 const greeting = {
   title: "Hi all, I'm Shreya",
   subTitle: emoji(
-    "Software Engineer in Test with 4.5+ years of experience building automation frameworks for AI/ML pipelines and distributed systems. M.S. in Computer Science candidate (May 2026)."
+    "SDET with 5+ years of experience owning automation and quality for distributed, microservice-based systems across UI, API, and data layers. Expertise in Playwright, Selenium, Appium, PyTest, and CI/CD with a strong focus on reliability and system-level validation. Proven track record of reducing regression cycles by 60%, improving defect detection by 40%, and strengthening release stability in high-scale environments."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1tPCrZcqig7nZX4Pq2fXaMndlUUyQ24yR/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1a2w49h0bj8su5xjeGoR4A5MYOGJG92Ym/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -27,62 +27,65 @@ const socialMediaLinks = {
   github:   "https://github.com/ishreyakumari/",
   linkedin: "https://www.linkedin.com/in/ishreyakumari/",
   gmail:    "ishreyakumari2026@gmail.com",
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
   display:  true
+};
+
+const contactInfo = {
+  title: emoji("Contact Me 📧"),
+  subtitle: "",
+  number: "",
+  email_address: "ishreyakumari2026@gmail.com"
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: emoji("What I do 🛠️"),
+  title: emoji("Technical Skills 🛠️"),
   subTitle: "",
   skills: [
     emoji(
-      "Build automation frameworks from scratch for AI/ML pipelines, distributed microservices, and high-scale web platforms"
+      "Automation & Languages: Playwright, Selenium WebDriver, Appium, PyTest, TestNG, REST Assured, Python, JavaScript/TypeScript, SQL, Contract Testing"
     ),
     emoji(
-      "Reduce regression time by 30–50% and improve release reliability through CI/CD integration"
-    ),
-    emoji(
-      "Design REST and WebSocket contract validation pipelines for schema integrity and failure handling"
-    ),
-    emoji(
-      "Implement performance and load testing with JMeter at 10k+ concurrent users for scalability improvements"
-    ),
-    emoji(
-      "Drive production defect root cause analysis using Splunk and Datadog, reducing post-release incidents"
+      "CI/CD, Cloud & Observability: GitHub Actions, Jenkins, Docker, AWS (EC2, S3, Lambda, ECS), GitLab CI/CD, Datadog, Splunk, JMeter, Locust, AI/LLM Testing, ETL Validation"
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
     {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
       skillName: "Playwright",
-      fontAwesomeClassname: "fas fa-theater-masks"
+      fontAwesomeClassname: "fas fa-code"
     },
     {
       skillName: "Selenium",
       fontAwesomeClassname: "fas fa-vial"
     },
     {
+      skillName: "Appium",
+      fontAwesomeClassname: "fas fa-mobile-alt"
+    },
+    {
       skillName: "PyTest",
       fontAwesomeClassname: "fas fa-flask"
     },
     {
-      skillName: "GitHub",
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fas fa-file-code"
+    },
+    {
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "GitHub Actions",
       fontAwesomeClassname: "fab fa-github"
     },
     {
@@ -94,28 +97,16 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "New Relic",
-      fontAwesomeClassname: "fas fa-chart-line"
-    },
-    {
       skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "PostgreSQL",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "Datadog",
+      fontAwesomeClassname: "fas fa-chart-line"
     },
     {
-      skillName: "Git",
-      fontAwesomeClassname: "fab fa-git-alt"
-    },
-    {
-      skillName: "Linux",
-      fontAwesomeClassname: "fab fa-linux"
-    },
-    {
-      skillName: "AI Agents",
-      fontAwesomeClassname: "fas fa-robot"
+      skillName: "Splunk",
+      fontAwesomeClassname: "fas fa-search"
     }
   ],
   display: true
@@ -129,18 +120,18 @@ const educationInfo = {
     {
       schoolName: "California State University - East Bay",
       logo: require("./assets/images/east_bay.png"),
-      subHeader: "Master of Science in Computer Science (GPA: 3.57)",
-      duration: "August 2024 - May 2026",
-      location: "Hayward, CA, USA",
+      subHeader: "M.S. Computer Science (GPA: 3.57)",
+      duration: "Aug 2024 - May 2026",
+      location: "",
       desc: "",
       descBullets: []
     },
     {
       schoolName: "Ch. Braham Prakash Government Engineering College",
       logo: require("./assets/images/guru_gobind.png"),
-      subHeader: "Bachelor of Technology in Information Technology (GPA: 3.50)",
-      duration: "August 2015 - May 2019",
-      location: "Delhi, India",
+      subHeader: "B.Tech Information Technology",
+      duration: "Aug 2015 - May 2019",
+      location: "",
       desc: "",
       descBullets: []
     }
@@ -153,17 +144,16 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Development Engineer in Test – AI Systems",
+      role: "Software Development Engineer in Test",
       company: "Quneu",
       companylogo: require("./assets/images/quneu_logo.png"),
       companyUrl: "https://www.quneu.com/",
-      date: "Jan 2026 – Present",
-      location: "Fort Lauderdale, FL, USA",
+      date: "Jan 2026 - Present",
+      location: "",
       descBullets: [
-        "Architected Playwright + PyTest API automation framework from zero, establishing backend regression standards across 10+ authentication and file-processing microservices",
-        "Designed scalable folder structure, reusable fixtures, and environment config strategy enabling rapid test expansion across dev, staging, and prod",
-        "Built validation suite for multipart uploads, bulk ingestion workflows, and async AI/ML pipelines",
-        "Integrated CI-based regression execution into GitHub Actions, reducing manual verification overhead by 60%"
+        "Architected a distributed PyTest framework with parallel execution and service isolation across 10+ microservices, cutting regression time by 45% and eliminating environment-related flakiness.",
+        "Drove a 40% improvement in pre-release defect detection by building CI/CD test orchestration in GitHub Actions with PR gating, automated failure diagnostics, and coverage reporting.",
+        "Designed end-to-end validation strategies for AI-driven knowledge graph pipelines, reducing escaped defects by 30% by standardizing test data contracts and environment isolation across services."
       ]
     },
     {
@@ -171,13 +161,12 @@ const workExperiences = {
       company: "Oatmeal AI",
       companylogo: require("./assets/images/oatmeal_logo.jpeg"),
       companyUrl: "https://oatmealfarmnetwork.com/",
-      date: "Aug 2025 – Dec 2025",
-      location: "San Jose, CA, USA",
+      date: "Aug 2025 - Dec 2025",
+      location: "",
       descBullets: [
-        "Built Playwright-based regression framework from scratch as sole QA engineer, defining test architecture for AI agent workflows and conversational APIs",
-        "Designed REST and WebSocket contract validation pipelines to verify message sequencing, schema integrity, and failure handling across 5+ distributed services",
-        "Integrated GitHub Actions + Docker CI automation, achieving 40% reduction in customer-facing errors through earlier defect detection",
-        "Reduced mean time to detect (MTTD) from days to hours"
+        "Owned and delivered a Playwright (TypeScript) framework covering UI, API, and WebSocket layers with modular, reusable components, reducing manual regression effort by 60%.",
+        "Engineered parallel CI/CD pipelines with automated schema validation and contract testing for AI workflows, compressing validation cycles from hours to under 10 minutes.",
+        "Eliminated flaky test failures in non-deterministic AI outputs by redesigning synchronization logic, retry strategies, and test isolation, improving suite reliability by 30%+."
       ]
     },
     {
@@ -185,27 +174,24 @@ const workExperiences = {
       company: "Chegg Inc.",
       companylogo: require("./assets/images/chegg.png"),
       companyUrl: "https://www.chegg.com/",
-      date: "Jun 2022 – Jul 2024",
-      location: "India",
+      date: "Jun 2022 - Jul 2024",
+      location: "",
       descBullets: [
-        "Scaled automated test coverage by 45% via CI parallelization across 20+ modules of a platform serving 4M+ users globally",
-        "Cut regression execution time by 30% through optimized test orchestration and parallel execution",
-        "Led performance and load testing with JMeter at 10k+ concurrent users, contributing to 20% scalability improvement",
-        "Drove production defect root cause analysis using Splunk and Datadog, reducing post-release incidents by 35%"
+        "Owned full-stack quality engineering for a platform serving 4M+ users, reducing production defects by 35% through scalable UI, API, and data-layer automation.",
+        "Uncovered critical system bottlenecks via JMeter and Locust performance testing at 10k+ concurrent users, directly informing infrastructure scaling decisions.",
+        "Increased release velocity and data integrity by building SQL-based ETL validation pipelines and automating regression across 15+ distributed services in Jenkins CI/CD."
       ]
     },
     {
-      role: "Test Engineer (Automation)",
-      company: "Infosys Ltd",
+      role: "Test Engineer",
+      company: "Infosys Ltd.",
       companylogo: require("./assets/images/infosys.png"),
       companyUrl: "https://www.infosys.com/",
-      date: "Jan 2020 – May 2022",
-      location: "India",
+      date: "Jan 2020 - May 2022",
+      location: "",
       descBullets: [
-        "Reduced manual regression effort by 50% through Java-based Page Object Model design across a 3-tier enterprise application",
-        "Reduced framework maintenance overhead by 30% across a 3-tier enterprise application",
-        "Reduced post-production defects by 25% via structured defect triage and release checklists",
-        "Integrated cross-team validation processes into sprint cycles for improved release quality"
+        "Engineered Selenium (Python) and Appium frameworks using Page Object Model, scaling automation coverage to 80%+ across web and mobile platforms from near-zero baseline.",
+        "Accelerated integration defect detection by building REST API test suites with REST Assured, shifting validation left and reducing QA cycle time by 25%."
       ]
     }
   ]
@@ -214,32 +200,30 @@ const workExperiences = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: emoji("Key Projects 🚀"),
+  title: emoji("Projects 🚀"),
   subtitle: "",
   projects: [
     {
       image: require("./assets/images/api-automator.webp"),
       projectName: "API Automator",
-      projectDesc: "Built data-driven REST API validation tool with schema contract verification, parameterized test execution, and JSON diff reporting. Supports multi-environment config and CI integration.",
+      projectDesc:
+        "Python-based API automation framework with schema validation, reusable components, and CI/CD integration supporting parallel execution across environments.",
       footerLink: [
         {
           name: "GitHub",
-          url: "https://github.com/ishreyakumari/Document-and-API-Classifier"
+          url: "https://github.com/ishreyakumari/API-Testing-Agent"
         }
       ]
     },
     {
       image: require("./assets/images/cloud-mover.webp"),
       projectName: "CloudMover",
-      projectDesc: "Developed and validated backend APIs for cloud file migration workflows, including authentication flows, permission boundary testing, and end-to-end data integrity checks.",
+      projectDesc:
+        "Backend validation workflows for cloud data migration covering authentication, integration testing, and data integrity checks across distributed systems.",
       footerLink: [
         {
           name: "GitHub",
           url: "https://github.com/ishreyakumari/CloudMover"
-        },
-        {
-          name: "Live Demo",
-          url: "https://cloudmover.tech/"
         }
       ]
     }
@@ -251,65 +235,20 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements & Recognition 🏆 "),
+  title: "",
   subtitle: "",
 
-  achievementsCards: [
-    {
-      title: "OSCAR Scholarship - CSU East Bay",
-      organization: "CSU East Bay",
-      date: "[2025-2026]",
-      subtitle:
-        "Awarded OSCAR Scholarship for excellence in AI-driven testing research. Recognized for outstanding contributions to automation testing and AI integration research.",
-      image: require("./assets/images/east_bay.png"),
-      imageAlt: "OSCAR Scholarship Logo"
-    },
-    {
-      title: "Vice President - Society of Women Engineers - CSU East Bay",
-      organization: "CSU East Bay",
-      date: "[2024-2025]",
-      subtitle:
-        "Led chapter initiatives to promote women in STEM, organized technical workshops and networking events. Mentored 50+ students and increased chapter membership by 40% through outreach programs.",
-      image: require("./assets/images/east_bay.png"),
-      imageAlt: "SWE Logo"
-    },
-    {
-      title: "Star Achiever Award - Chegg Inc.",
-      organization: "Chegg Inc.",
-      date: "2024",
-      subtitle:
-        "Recognized for outstanding contributions to automation and QA optimization in the Chegg AI Integration Project. Awarded for exceptional performance in delivering high-impact testing solutions.",
-      image: require("./assets/images/chegg.png"),
-      imageAlt: "Chegg Award Logo"
-    },
-    {
-      title: "Best Innovator Award - Chegg Inc.",
-      organization: "Chegg Inc.",
-      date: "2022",
-      subtitle:
-        "Honored for developing scalable automation frameworks. Recognized for innovation in test automation and system optimization.",
-      image: require("./assets/images/chegg.png"),
-      imageAlt: "Chegg Innovation Award Logo"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  achievementsCards: [],
+  display: false
 };
 
 // Resume Section
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
+  title: "",
+  subtitle: "",
   resumeLink:
-    "https://drive.google.com/file/d/1tPCrZcqig7nZX4Pq2fXaMndlUUyQ24yR/view?usp=sharing", // Set to empty to hide the button
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
-
-const contactInfo = {
-  title: emoji("Contact Me 📧"),
-  subtitle:
-    "Interested in my work or want to discuss a project?\nI'd love to hear from you!\nReach out via email.",
-  email_address: "ishreyakumari2026@gmail.com"
+    "https://drive.google.com/file/d/1a2w49h0bj8su5xjeGoR4A5MYOGJG92Ym/view?usp=sharing",
+  display: false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer

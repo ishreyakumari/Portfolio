@@ -70,7 +70,7 @@ function Header() {
           {viewResume && (
             <li>
               <a
-                href="https://drive.google.com/uc?export=download&id=1tPCrZcqig7nZX4Pq2fXaMndlUUyQ24yR"
+                href={resumeSection.resumeLink}
                 download
                 className="nav-link"
               >

@@ -10,9 +10,11 @@ export default function Contact() {
         <div className="contact-div-main">
           <div className="contact-header">
             <h1 className="heading contact-title">{contactInfo.title}</h1>
-            <p className="contact-subtitle">
-              {contactInfo.subtitle}
-            </p>
+            {contactInfo.subtitle && (
+              <p className="contact-subtitle">
+                {contactInfo.subtitle}
+              </p>
+            )}
             <div className="contact-text-div">
               {contactInfo.number && (
                 <>
